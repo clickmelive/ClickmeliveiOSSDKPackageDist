@@ -1,0 +1,180 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PIPKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import Combine
+import Foundation
+@_exported import PIPKit
+import QuartzCore
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public struct PIPShadow {
+  public let color: UIKit.UIColor
+  public let opacity: Swift.Float
+  public let offset: CoreFoundation.CGSize
+  public let radius: CoreFoundation.CGFloat
+  public init(color: UIKit.UIColor, opacity: Swift.Float, offset: CoreFoundation.CGSize, radius: CoreFoundation.CGFloat)
+}
+public struct PIPCorner {
+  public let radius: CoreFoundation.CGFloat
+  public let curve: QuartzCore.CALayerCornerCurve?
+  public init(radius: CoreFoundation.CGFloat, curve: QuartzCore.CALayerCornerCurve? = nil)
+}
+public enum PIPState {
+  case pip
+  case full
+  public static func == (a: PIPKit.PIPState, b: PIPKit.PIPState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PIPPosition {
+  case topLeft
+  case middleLeft
+  case bottomLeft
+  case topRight
+  case middleRight
+  case bottomRight
+  public static func == (a: PIPKit.PIPPosition, b: PIPKit.PIPPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias PIPKitViewController = (UIKit.UIViewController & PIPKit.PIPUsable)
+@_hasMissingDesignatedInitializers final public class PIPKit {
+  public static var isActive: Swift.Bool {
+    get
+  }
+  public static var isPIP: Swift.Bool {
+    get
+  }
+  public static var visibleViewController: (any UIKit.UIViewController & PIPKit.PIPUsable)? {
+    get
+  }
+  final public class func show(with viewController: any UIKit.UIViewController & PIPKit.PIPUsable, completion: (() -> Swift.Void)? = nil)
+  final public class func dismiss(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension PIPKit.PIPKit {
+  public static var isAVPIPKitSupported: Swift.Bool {
+    get
+  }
+}
+@available(iOS 15.0, *)
+public enum AVPIPKitRenderPolicy {
+  case once
+  case preferredFramesPerSecond(Swift.Int)
+}
+@available(iOS 15.0, *)
+public protocol AVPIPKitUsable {
+  var renderer: any PIPKit.AVPIPKitRenderer { get }
+  func startPictureInPicture()
+  func stopPictureInPicture()
+}
+@available(iOS 15.0, *)
+extension PIPKit.AVPIPKitUsable {
+  public var isAVKitPIPSupported: Swift.Bool {
+    get
+  }
+}
+@available(iOS 15.0, *)
+public protocol AVPIPKitRenderer {
+  var policy: PIPKit.AVPIPKitRenderPolicy { get }
+  var renderPublisher: Combine.AnyPublisher<UIKit.UIImage, Swift.Never> { get }
+  func start()
+  func stop()
+  func exit()
+}
+@available(iOS 15.0, *)
+public protocol AVPIPUIKitUsable : PIPKit.AVPIPKitUsable {
+  var pipTargetView: UIKit.UIView { get }
+  var renderPolicy: PIPKit.AVPIPKitRenderPolicy { get }
+  var exitPublisher: Combine.AnyPublisher<Swift.Void, Swift.Never> { get }
+}
+@available(iOS 15.0, *)
+extension PIPKit.AVPIPUIKitUsable {
+  public var renderPolicy: PIPKit.AVPIPKitRenderPolicy {
+    get
+  }
+}
+@available(iOS 15.0, *)
+extension PIPKit.AVPIPUIKitUsable where Self : UIKit.UIViewController {
+  public var pipTargetView: UIKit.UIView {
+    get
+  }
+  public var renderer: any PIPKit.AVPIPKitRenderer {
+    get
+  }
+  public var exitPublisher: Combine.AnyPublisher<Swift.Void, Swift.Never> {
+    get
+  }
+  public func startPictureInPicture()
+  public func stopPictureInPicture()
+  public func renderPictureInPicture()
+}
+@available(iOS 15.0, *)
+extension PIPKit.AVPIPUIKitUsable where Self : UIKit.UIView {
+  public var pipTargetView: UIKit.UIView {
+    get
+  }
+  public var renderer: any PIPKit.AVPIPKitRenderer {
+    get
+  }
+  public var exitPublisher: Combine.AnyPublisher<Swift.Void, Swift.Never> {
+    get
+  }
+  public func startPictureInPicture()
+  public func stopPictureInPicture()
+  public func renderPictureInPicture()
+}
+public protocol PIPUsable {
+  var initialState: PIPKit.PIPState { get }
+  var initialPosition: PIPKit.PIPPosition { get }
+  var insetsPIPFromSafeArea: Swift.Bool { get }
+  var pipEdgeInsets: UIKit.UIEdgeInsets { get }
+  var pipSize: CoreFoundation.CGSize { get }
+  var pipShadow: PIPKit.PIPShadow? { get }
+  var pipCorner: PIPKit.PIPCorner? { get }
+  func didChangedState(_ state: PIPKit.PIPState)
+  func didChangePosition(_ position: PIPKit.PIPPosition)
+}
+extension PIPKit.PIPUsable {
+  public var initialState: PIPKit.PIPState {
+    get
+  }
+  public var initialPosition: PIPKit.PIPPosition {
+    get
+  }
+  public var insetsPIPFromSafeArea: Swift.Bool {
+    get
+  }
+  public var pipEdgeInsets: UIKit.UIEdgeInsets {
+    get
+  }
+  public var pipSize: CoreFoundation.CGSize {
+    get
+  }
+  public var pipShadow: PIPKit.PIPShadow? {
+    get
+  }
+  public var pipCorner: PIPKit.PIPCorner? {
+    get
+  }
+  public func didChangedState(_ state: PIPKit.PIPState)
+  public func didChangePosition(_ position: PIPKit.PIPPosition)
+}
+extension PIPKit.PIPUsable where Self : UIKit.UIViewController {
+  public func setNeedsUpdatePIPFrame()
+  public func startPIPMode()
+  public func stopPIPMode()
+}
+extension PIPKit.PIPState : Swift.Equatable {}
+extension PIPKit.PIPState : Swift.Hashable {}
+extension PIPKit.PIPPosition : Swift.Equatable {}
+extension PIPKit.PIPPosition : Swift.Hashable {}

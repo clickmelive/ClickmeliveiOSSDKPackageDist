@@ -1,0 +1,11 @@
+framework module ClickmeliveiOSSDK {
+  umbrella header "ClickmeliveiOSSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ClickmeliveiOSSDK.Swift {
+  header "ClickmeliveiOSSDK-Swift.h"
+  requires objc
+}

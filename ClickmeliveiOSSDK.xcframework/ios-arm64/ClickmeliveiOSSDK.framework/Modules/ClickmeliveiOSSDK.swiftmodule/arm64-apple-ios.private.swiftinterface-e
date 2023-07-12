@@ -1,0 +1,2297 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClickmeliveiOSSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Alamofire
+import AmazonIVSPlayer
+@_exported import ClickmeliveiOSSDK
+import Combine
+import CoreMedia
+import Foundation
+import Lottie
+import PIPKit
+import SDWebImage
+import Starscream
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class HomePageMenu : UIKit.UIView {
+  public enum HomePageMenuItem : Swift.Int {
+    case discover, live, video
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.HomePageMenu {
+  @_Concurrency.MainActor(unsafe) final public func updateMenu()
+  @_Concurrency.MainActor(unsafe) final public func hideVideo()
+}
+public class LocalClient<Resource> {
+  public init()
+  public func load(response: Resource, completionCallback: @escaping (Resource?, (any Swift.Error)?) -> Swift.Void)
+  @objc deinit
+}
+public struct FavoriteProduct {
+}
+final public class EventStatusViewModel {
+  public init(eventDetailLoader: any ClickmeliveiOSSDK.EventDetailLoader)
+  final public var onEventEventStatusLoaded: ((ClickmeliveiOSSDK.Event) -> Swift.Void)?
+  final public func loadEventStatus(eventId: Swift.Int)
+  @objc deinit
+}
+public enum Paginated<T> {
+  indirect case node(T?, (((Swift.Result<ClickmeliveiOSSDK.Paginated<T>, any Swift.Error>) -> Swift.Void) -> ())?)
+  public var value: T? {
+    get
+  }
+  public var next: ((@escaping (Swift.Result<ClickmeliveiOSSDK.Paginated<T>, any Swift.Error>) -> Swift.Void) -> ())? {
+    get
+  }
+}
+public struct LiveBadgeCount : Swift.Equatable {
+  public let count: Swift.Int
+  public init(count: Swift.Int)
+  public static func == (a: ClickmeliveiOSSDK.LiveBadgeCount, b: ClickmeliveiOSSDK.LiveBadgeCount) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class LiveOverView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable {
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol EventProductLoader {
+  func load(eventId: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.Product]?, (any Swift.Error)?) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class HorizontalProductCell : UIKit.UITableViewCell {
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.HorizontalProductCell : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+}
+public struct CMLUser {
+  public init(userName: Swift.String, userId: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class CML {
+  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onOpenProductDetail: @escaping (ClickmeliveiOSSDK.Product) -> Swift.Void, onAddToBasket: @escaping (ClickmeliveiOSSDK.Product) -> Swift.Void, onBasketClicked: @escaping () -> Swift.Void)
+  public static func makeCMLNavigationController() -> ClickmeliveiOSSDK.CMLNavigationController
+  public static func makeHomePageViewController() -> UIKit.UIViewController
+  public static func makeFeedViewController(events: [ClickmeliveiOSSDK.Event], selectedIndexPath: Foundation.IndexPath, rootNavigationController: UIKit.UINavigationController?, disablePip: Swift.Bool = false) -> ClickmeliveiOSSDK.FeedViewController
+  public static func makeLiveViewController(type: ClickmeliveiOSSDK.StreamTypes) -> ClickmeliveiOSSDK.LiveViewController
+  public static func makeListEventVideos(withRouting: Swift.Bool = true, title: Swift.String = "") -> UIKit.UIViewController
+  public static func makeEventProductsViewController(event: ClickmeliveiOSSDK.Event?, bottomSheetHeight: ClickmeliveiOSSDK.BottomSheetHeight, cellType: ClickmeliveiOSSDK.EventProductCellType, events: [ClickmeliveiOSSDK.Event], selectedIndexPath: Foundation.IndexPath, rootNavigationController: UIKit.UINavigationController?) -> ClickmeliveiOSSDK.EventProductsViewController
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) final public class DiscoverCellController : ObjectiveC.NSObject, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) final public var onAction: ((ClickmeliveiOSSDK.DiscoverAction) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onError: ((ClickmeliveiOSSDK.EventViewModel?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onPlayerViewAction: ((ClickmeliveiOSSDK.PlayerView.Action) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var cell: ClickmeliveiOSSDK.DiscoverCell?
+  @_Concurrency.MainActor(unsafe) public init(eventViewModel: ClickmeliveiOSSDK.EventViewModel, eventProductsViewModel: ClickmeliveiOSSDK.EventProductsViewModel, eventStatusViewModel: ClickmeliveiOSSDK.EventStatusViewModel, imageLoader: any ClickmeliveiOSSDK.ImageLoader)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) final public func releaseCellForReuse()
+  @_Concurrency.MainActor(unsafe) final public func currentEvent() -> ClickmeliveiOSSDK.Event
+  @_Concurrency.MainActor(unsafe) final public func discoverId() -> Swift.String
+  @_Concurrency.MainActor(unsafe) final public func handleNewCell()
+  @_Concurrency.MainActor(unsafe) final public func handleOldCell()
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.DiscoverCellController {
+  @_Concurrency.MainActor(unsafe) final public func player() -> AmazonIVSPlayer.IVSPlayer?
+}
+extension ClickmeliveiOSSDK.DiscoverCellController {
+  @_Concurrency.MainActor(unsafe) final public func displayEventProductsLoading(_ isLoading: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) final public func updateEventProducts(viewModels: [ClickmeliveiOSSDK.ProductViewModel])
+}
+extension ClickmeliveiOSSDK.DiscoverCellController {
+  @_Concurrency.MainActor(unsafe) final public func statusChanged(with status: ClickmeliveiOSSDK.Event.EventStatus, liveStream: ClickmeliveiOSSDK.Event.LiveStream?)
+}
+extension ClickmeliveiOSSDK.EventDTO {
+  public func toDomain() -> ClickmeliveiOSSDK.Event
+}
+public struct EventDTO : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AnchoredConstraints {
+  public var top: UIKit.NSLayoutConstraint?, leading: UIKit.NSLayoutConstraint?, bottom: UIKit.NSLayoutConstraint?, trailing: UIKit.NSLayoutConstraint?, width: UIKit.NSLayoutConstraint?, height: UIKit.NSLayoutConstraint?
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SmallProductCell : ClickmeliveiOSSDK.ProductCell {
+  @_Concurrency.MainActor(unsafe) override final public func setupViews()
+  @_Concurrency.MainActor(unsafe) override final public func setupLayout()
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.UserDTO {
+  public func toDomain() -> ClickmeliveiOSSDK.User
+}
+public struct UserDTO : Swift.Codable {
+  public let userId: Swift.Int?
+  public let username: Swift.String?
+  public let image: Swift.String?
+  public let fullName: Swift.String?
+  public let phone: Swift.String?
+  public let email: Swift.String?
+  public let type: Swift.Int?
+  public let followers: Swift.Int?
+  public let following: Swift.Int?
+  public let isChatPrivate: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension ClickmeliveiOSSDK.EventCell {
+  @_Concurrency.MainActor(unsafe) public func configure(with model: ClickmeliveiOSSDK.EventViewModel, imageLoader: any ClickmeliveiOSSDK.ImageLoader)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class EventCell : UIKit.UICollectionViewCell {
+  public enum Constants {
+  }
+  @_Concurrency.MainActor(unsafe) final public let ivEvent: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let ivDimBg: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let userStackView: UIKit.UIStackView
+  @_Concurrency.MainActor(unsafe) final public let ivUser: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let lblUsername: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let lblEventTitle: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let dateView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) final public let lblDate: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let ivDate: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let ivSpecialOffer: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let ivPlay: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let viewerCountView: ClickmeliveiOSSDK.ViewerCountView
+  @_Concurrency.MainActor(unsafe) public func setupViews()
+  @_Concurrency.MainActor(unsafe) public func setupLayout()
+  @objc deinit
+}
+public struct Seller : Swift.Hashable {
+  public let id: Swift.Int
+  public let username: Swift.String
+  public let image: Swift.String?
+  public let items: [ClickmeliveiOSSDK.Seller.Item]
+  public struct Item : Swift.Hashable {
+    public let id: Swift.Int
+    public let quantity: Swift.Int
+    public let selected: Swift.Bool
+    public let product: ClickmeliveiOSSDK.Product
+    public let variants: [Swift.String]
+    public let variantId: Swift.Int?
+    public var variantsPretty: Swift.String {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: ClickmeliveiOSSDK.Seller.Item, b: ClickmeliveiOSSDK.Seller.Item) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Seller, b: ClickmeliveiOSSDK.Seller) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class EventTypeView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func configure(viewModel: ClickmeliveiOSSDK.EventViewModel)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+public protocol AlertBuilder {
+  func oneButton(message: Swift.String, buttonTitle: Swift.String, completion: @escaping () -> Swift.Void)
+  func twoButton(message: Swift.String, buttonTitle: Swift.String, cancelTitle: Swift.String, completion: @escaping () -> Swift.Void)
+}
+public protocol HTTPClientTask {
+  func cancel()
+}
+public protocol HTTPClient {
+  typealias Result = Swift.Result<(Foundation.Data, Foundation.HTTPURLResponse), any Swift.Error>
+  @discardableResult
+  func execute(with request: Foundation.URLRequest, completion: @escaping (Swift.Result<(Foundation.Data, Foundation.HTTPURLResponse), any Swift.Error>) -> Swift.Void) -> any ClickmeliveiOSSDK.HTTPClientTask
+}
+@objc @_Concurrency.MainActor(unsafe) final public class FeedCellController : ObjectiveC.NSObject, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) final public var onAction: ((ClickmeliveiOSSDK.FeedAction) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onError: ((ClickmeliveiOSSDK.EventViewModel?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onPlayerViewAction: ((ClickmeliveiOSSDK.PlayerView.Action) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var cell: ClickmeliveiOSSDK.FeedCell?
+  @_Concurrency.MainActor(unsafe) public init(eventViewModel: ClickmeliveiOSSDK.EventViewModel, eventProductsViewModel: ClickmeliveiOSSDK.EventProductsViewModel, imageLoader: any ClickmeliveiOSSDK.ImageLoader)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) final public func releaseCellForReuse()
+  @_Concurrency.MainActor(unsafe) final public func currentEvent() -> ClickmeliveiOSSDK.Event
+  @_Concurrency.MainActor(unsafe) final public func handleNewCell()
+  @_Concurrency.MainActor(unsafe) final public func handleOldCell()
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.FeedCellController {
+  @_Concurrency.MainActor(unsafe) final public func player() -> AmazonIVSPlayer.IVSPlayer?
+}
+extension ClickmeliveiOSSDK.FeedCellController {
+  @_Concurrency.MainActor(unsafe) final public func statusChanged(with status: ClickmeliveiOSSDK.Event.EventStatus)
+}
+extension ClickmeliveiOSSDK.FeedCellController {
+  @_Concurrency.MainActor(unsafe) final public func updateViewerCount(_ viewModel: ClickmeliveiOSSDK.ViewerCountViewModel)
+}
+extension ClickmeliveiOSSDK.FeedCellController {
+  @_Concurrency.MainActor(unsafe) final public func displayEventProductsLoading(_ isLoading: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) final public func updateEventProducts(viewModels: [ClickmeliveiOSSDK.ProductViewModel])
+}
+extension ClickmeliveiOSSDK.FeedCellController {
+  @_Concurrency.MainActor(unsafe) final public func clearChat()
+  @_Concurrency.MainActor(unsafe) final public func display(controllers: [ClickmeliveiOSSDK.TableCellController])
+}
+@frozen public enum Size : Swift.Double {
+  case SMALL
+  case LARGE
+  case XSMALL
+  public init?(rawValue: Swift.Double)
+  public typealias RawValue = Swift.Double
+  public var rawValue: Swift.Double {
+    get
+  }
+}
+extension ClickmeliveiOSSDK.Localized {
+  public enum Variant {
+    public static var variantColorTitle: Swift.String {
+      get
+    }
+    public static var variantSizeTitle: Swift.String {
+      get
+    }
+  }
+}
+public struct ProductClickAnalyticsProperties {
+}
+public protocol EventProductsViewDelegate {
+  func addToBasket(product: ClickmeliveiOSSDK.Product)
+  func hasVariant(product: ClickmeliveiOSSDK.Product)
+  func productSelected(productId: Swift.Int, event: ClickmeliveiOSSDK.Event?, index: Swift.Int?)
+  func latestEventProducts(products: [ClickmeliveiOSSDK.Product])
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class EventProductsViewController : ClickmeliveiOSSDK.BottomSheetViewController {
+  @_Concurrency.MainActor(unsafe) public init(bottomSheetHeight: ClickmeliveiOSSDK.BottomSheetHeight, refreshController: ClickmeliveiOSSDK.EventProductsRefreshController)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) final public func display(_ sections: [ClickmeliveiOSSDK.CollectionCellController]...)
+}
+extension ClickmeliveiOSSDK.EventProductsViewController : UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+extension ClickmeliveiOSSDK.EventProductsViewController {
+  @_Concurrency.MainActor(unsafe) final public func setProductsLabel(_ label: Swift.String)
+}
+@_inheritsConvenienceInitializers final public class RemoteLiveEventLoader : ClickmeliveiOSSDK.RemoteClient<[ClickmeliveiOSSDK.Event]>, ClickmeliveiOSSDK.EventLoader {
+  final public func load(completionCallback: @escaping ([ClickmeliveiOSSDK.Event]?, (any Swift.Error)?) -> Swift.Void)
+  final public func loadByType(type: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.Event]?, (any Swift.Error)?) -> Swift.Void)
+  override public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  @objc deinit
+}
+extension Swift.String {
+  public func stringToFormatedDate() -> Swift.String
+  public func withBoldText(text: Swift.String, fontName: Swift.String? = nil, size: CoreFoundation.CGFloat = 12) -> Foundation.NSAttributedString
+}
+public func makeProductNameType(boldPart: Swift.String?, regularPart: Swift.String, size: CoreFoundation.CGFloat = 12) -> Foundation.NSAttributedString
+public struct Queue<T> {
+  public var elements: [T]
+}
+@_hasMissingDesignatedInitializers final public class DiscoverViewMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.DiscoverViewMapper.Error, b: ClickmeliveiOSSDK.DiscoverViewMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class EventResponseMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.EventResponseMapper.Error, b: ClickmeliveiOSSDK.EventResponseMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> [ClickmeliveiOSSDK.Event]
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class HomePageView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+final public class ProductViewModel {
+  public init(model: ClickmeliveiOSSDK.Product)
+  final public var product: ClickmeliveiOSSDK.Product {
+    get
+  }
+  final public var id: Swift.Int {
+    get
+  }
+  final public var variantId: Swift.Int? {
+    get
+  }
+  final public var name: Swift.String {
+    get
+  }
+  final public var brand: Swift.String {
+    get
+  }
+  final public var imageURL: Foundation.URL? {
+    get
+  }
+  final public var images: [Swift.String] {
+    get
+  }
+  final public var price: Swift.String {
+    get
+  }
+  final public var attributes: [ClickmeliveiOSSDK.Attribute] {
+    get
+  }
+  final public var discountedPrice: Swift.String? {
+    get
+  }
+  final public var description: Swift.String {
+    get
+  }
+  final public var isSpecialOfferHidden: Swift.Bool {
+    get
+  }
+  final public var sellerUsername: Swift.String {
+    get
+  }
+  final public var sellerImageURL: Foundation.URL? {
+    get
+  }
+  final public var hasVariant: Swift.Bool {
+    get
+  }
+  final public var deleteTitle: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class DiscoverView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable {
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+final public class RemoteChatLoader : ClickmeliveiOSSDK.ChatLoader {
+  public typealias Result = Swift.Result<ClickmeliveiOSSDK.Message, any Swift.Error>
+  public init(client: ClickmeliveiOSSDK.WebSocketConnector, baseURL: Foundation.URL)
+  final public func connect(eventId: Swift.Int, completion: @escaping (ClickmeliveiOSSDK.RemoteChatLoader.Result) -> Swift.Void)
+  final public func send(message: Swift.String)
+  final public func disconnect()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ComposeMessageView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+public struct AppEnvironment {
+  public enum Environment {
+    case production
+    case development
+    case mpTest
+    public static func == (a: ClickmeliveiOSSDK.AppEnvironment.Environment, b: ClickmeliveiOSSDK.AppEnvironment.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct Servers {
+  public var production: Swift.String
+  public var development: Swift.String
+  public var mpTest: Swift.String
+  public var eventStatsProduction: Swift.String
+  public var eventStatsDevelopment: Swift.String
+  public var chatProduction: Swift.String
+  public var chatDevelopment: Swift.String
+  public var analyticsProduction: Swift.String
+  public var analyticsTest: Swift.String
+  public init(production: Swift.String, development: Swift.String, mpTest: Swift.String, eventStatsProduction: Swift.String, eventStatsDevelopment: Swift.String, chatProduction: Swift.String, chatDevelopment: Swift.String, analyticsProduction: Swift.String, analyticsTest: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class EventProductHiddenDetailCell : ClickmeliveiOSSDK.ProductCell {
+  @_Concurrency.MainActor(unsafe) final public var onAddToBasketTapped: (() -> Swift.Void)?
+  public enum Constants {
+  }
+  @_Concurrency.MainActor(unsafe) final public let lblIndex: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) override final public func setupViews()
+  @_Concurrency.MainActor(unsafe) override final public func setupLayout()
+  @objc deinit
+}
+public struct Message : Swift.Hashable {
+  public enum MessageType : Swift.String {
+    case NONE
+    case MESSAGE
+    case JOIN
+    case SALE
+    case SHARE
+    case BASKET
+    case KVKK
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Message, b: ClickmeliveiOSSDK.Message) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum EventFilterSort : Swift.Int {
+  case random
+  case mostWatched
+  case new
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol EventFilterDelegate {
+  func filterUpdated(ids: [Swift.Int]?, order: ClickmeliveiOSSDK.EventFilterSort, title: Swift.String, count: Swift.Int)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class EventFilterViewController : ClickmeliveiOSSDK.BottomSheetViewController {
+  @_Concurrency.MainActor(unsafe) final public var onFilterTapped: (((viewModels: [ClickmeliveiOSSDK.EventFilterItemViewModel], count: Swift.Int, sort: ClickmeliveiOSSDK.EventFilterSort)?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public init(bottomSheetHeight: ClickmeliveiOSSDK.BottomSheetHeight, viewModel: ClickmeliveiOSSDK.InterestsViewModel)
+  @_Concurrency.MainActor(unsafe) final public func display(_ sections: [ClickmeliveiOSSDK.TableCellController]...)
+  @_Concurrency.MainActor(unsafe) final public func displaySorts(_ sections: [ClickmeliveiOSSDK.TableCellController]...)
+  @_Concurrency.MainActor(unsafe) final public func displayFilterCount(_ count: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.EventFilterViewController : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class EventProductCell : ClickmeliveiOSSDK.ProductCell {
+  public enum Constants {
+  }
+  @_Concurrency.MainActor(unsafe) final public let lblIndex: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) override final public func setupViews()
+  @_Concurrency.MainActor(unsafe) override final public func setupLayout()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class DiscoverTapToJoinView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) final public func configure(viewModel: ClickmeliveiOSSDK.EventViewModel)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) open class CMLTextField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) public init(padding: CoreFoundation.CGFloat, font: UIKit.UIFont, cornerRadius: CoreFoundation.CGFloat = 0.0, keyboardType: UIKit.UIKeyboardType = .default, backgroundColor: UIKit.UIColor = .clear, isSecureTextEntry: Swift.Bool = false, placeholder: Swift.String = "", placeholderFont: UIKit.UIFont = UIFont.systemFont(ofSize: 16), centered: Swift.Bool = false, withBorder: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func textRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func editingRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.Localized {
+  public enum Error {
+    public static var defaultMessage: Swift.String {
+      get
+    }
+    public static var defaultButtonTitle: Swift.String {
+      get
+    }
+  }
+}
+@_inheritsConvenienceInitializers final public class RemoteLiveBadgeLoader : ClickmeliveiOSSDK.RemoteClient<ClickmeliveiOSSDK.LiveBadgeCount>, ClickmeliveiOSSDK.LiveBadgeLoader {
+  final public func load(completionCallback: @escaping (ClickmeliveiOSSDK.LiveBadgeCount?, (any Swift.Error)?) -> Swift.Void)
+  override public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  @objc deinit
+}
+final public class AuthTokenLoader {
+  public init(store: any ClickmeliveiOSSDK.TokenStore)
+  final public func load() -> Swift.String?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CMLNavigationController : UIKit.UINavigationController, UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setNavigationBarHidden(_ hidden: Swift.Bool, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public func navigationController(_ navigationController: UIKit.UINavigationController, didShow viewController: UIKit.UIViewController, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func popViewController(animated: Swift.Bool) -> UIKit.UIViewController?
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers final public class RemoteEventDetailLoader : ClickmeliveiOSSDK.RemoteClient<ClickmeliveiOSSDK.Event>, ClickmeliveiOSSDK.EventDetailLoader {
+  final public func load(eventId: Swift.Int, completionCallback: @escaping (ClickmeliveiOSSDK.Event?, (any Swift.Error)?) -> Swift.Void)
+  final public func loadStatus(eventId: Swift.Int, completionCallback: @escaping (ClickmeliveiOSSDK.Event?, (any Swift.Error)?) -> Swift.Void)
+  override public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func addClickMeLiveShadow()
+}
+@_hasMissingDesignatedInitializers final public class InterestsEventCountMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.InterestsEventCountMapper.Error, b: ClickmeliveiOSSDK.InterestsEventCountMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> [ClickmeliveiOSSDK.Interests]
+  @objc deinit
+}
+public protocol ChatLoader {
+  typealias Result = Swift.Result<ClickmeliveiOSSDK.Message, any Swift.Error>
+  func connect(eventId: Swift.Int, completion: @escaping (Self.Result) -> Swift.Void)
+  func send(message: Swift.String)
+  func disconnect()
+}
+public protocol DiscoverLoader {
+  func load(page: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.DiscoverItem]?, (any Swift.Error)?) -> Swift.Void)
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case patch
+  case delete
+  case put
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol URLRequestBuilder {
+  var path: Swift.String { get }
+  var parameters: [Swift.String : Any]? { get }
+  var queryItems: [Foundation.URLQueryItem]? { get }
+  var method: ClickmeliveiOSSDK.HTTPMethod { get }
+  var withHeader: [Swift.String : Swift.String]? { get }
+}
+extension ClickmeliveiOSSDK.URLRequestBuilder {
+  public func urlRequest(baseURL: Foundation.URL) -> Foundation.URLRequest
+}
+public protocol WebSocketProtocol {
+  func send(message: Swift.String)
+  func send(data: Foundation.Data)
+  func establishConnection()
+  func disconnect()
+}
+@objc @_inheritsConvenienceInitializers public class WebSocketConnector : ObjectiveC.NSObject, Starscream.WebSocketDelegate {
+  @objc deinit
+  public func connect(withSocketURL urlRequest: Foundation.URLRequest)
+  @objc override dynamic public init()
+}
+extension ClickmeliveiOSSDK.WebSocketConnector : ClickmeliveiOSSDK.WebSocketProtocol {
+  public func establishConnection()
+  public func disconnect()
+  public func send(message: Swift.String)
+  public func send(data: Foundation.Data)
+}
+extension ClickmeliveiOSSDK.WebSocketConnector {
+  public func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocket)
+}
+extension ClickmeliveiOSSDK.Localized {
+  public enum Live {
+    public static var tabbarItemTitle: Swift.String {
+      get
+    }
+    public static var detailTitle: Swift.String {
+      get
+    }
+    public static var detailTitlePazarama: Swift.String {
+      get
+    }
+  }
+}
+public struct Success {
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var isShimmering: Swift.Bool {
+    get
+    set
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class LiveView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable {
+  @_Concurrency.MainActor(unsafe) final public let tableView: UIKit.UITableView
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+final public class ProductCellController {
+  public init(productViewModel: ClickmeliveiOSSDK.ProductViewModel, stockViewModel: ClickmeliveiOSSDK.StockViewModel, imageLoader: any ClickmeliveiOSSDK.ImageLoader, productSelected: @escaping () -> Swift.Void)
+  final public func releaseCellForReuse()
+  final public func selected()
+  @objc deinit
+}
+public protocol Layouting : AnyObject {
+  associatedtype ViewType : UIKit.UIView, ClickmeliveiOSSDK.Layoutable
+  var layoutableView: Self.ViewType { get }
+}
+extension ClickmeliveiOSSDK.Layouting where Self : UIKit.UIViewController {
+  public var layoutableView: Self.ViewType {
+    get
+  }
+}
+public class ViewerCountViewModel {
+  public init(model: ClickmeliveiOSSDK.EventStats)
+  public var isViewerCountHidden: Swift.Bool {
+    get
+  }
+  public var isViewerImageHidden: Swift.Bool {
+    get
+  }
+  public var isLiveImageHidden: Swift.Bool {
+    get
+  }
+  public var viewerCount: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) final public class ChatCellController : ObjectiveC.NSObject, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) public init(messageViewModel: ClickmeliveiOSSDK.MessageViewModel)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) final public class InterestCellController : ObjectiveC.NSObject, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate {
+  @_Concurrency.MainActor(unsafe) public init(viewModel: ClickmeliveiOSSDK.Interests, selection: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didDeselectItemAt indexPath: Foundation.IndexPath)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class HorizontalSmallEventCell : ClickmeliveiOSSDK.HorizontalEventCell {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class HorizontalLargeEventCell : ClickmeliveiOSSDK.HorizontalEventCell {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class HorizontalEventCell : UIKit.UITableViewCell {
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.HorizontalEventCell : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class HomePageViewController : UIKit.UIViewController, ClickmeliveiOSSDK.Layouting {
+  @frozen public enum HomeAction {
+    case onLiveEventsDetailTapped
+    case onDismissPIP
+    public static func == (a: ClickmeliveiOSSDK.HomePageViewController.HomeAction, b: ClickmeliveiOSSDK.HomePageViewController.HomeAction) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public typealias ViewType = ClickmeliveiOSSDK.HomePageView
+  @_Concurrency.MainActor(unsafe) final public var onAction: ((ClickmeliveiOSSDK.HomePageViewController.HomeAction) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onTabSelection: ((Swift.String) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public init(refreshController: ClickmeliveiOSSDK.HomePageRefreshController)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func loadView()
+  @_Concurrency.MainActor(unsafe) final public func displayControllers(_ viewControllers: [UIKit.UIViewController])
+  @_Concurrency.MainActor(unsafe) final public func hideVideo()
+  @_Concurrency.MainActor(unsafe) final public func updateMenu(item: ClickmeliveiOSSDK.HomePageMenu.HomePageMenuItem? = nil)
+}
+extension ClickmeliveiOSSDK.HomePageViewController : UIKit.UIPageViewControllerDataSource {
+  @_Concurrency.MainActor(unsafe) @objc final public func presentationCount(for pageViewController: UIKit.UIPageViewController) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerAfter viewController: UIKit.UIViewController) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, viewControllerBefore viewController: UIKit.UIViewController) -> UIKit.UIViewController?
+}
+extension ClickmeliveiOSSDK.HomePageViewController : UIKit.UIPageViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func pageViewController(_ pageViewController: UIKit.UIPageViewController, didFinishAnimating finished: Swift.Bool, previousViewControllers: [UIKit.UIViewController], transitionCompleted completed: Swift.Bool)
+}
+extension ClickmeliveiOSSDK.Localized {
+  public enum Feed {
+    public static var enterMessage: Swift.String {
+      get
+    }
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class LiveOverViewController : UIKit.UIViewController, ClickmeliveiOSSDK.Layouting {
+  public typealias ViewType = ClickmeliveiOSSDK.LiveOverView
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override final public func loadView()
+}
+public protocol ImageLoader {
+  func loadImage(to imageView: UIKit.UIImageView, with url: Foundation.URL?)
+}
+final public class FeedViewModel {
+  public init(liveEventLoader: any ClickmeliveiOSSDK.EventLoader)
+  final public func loadLiveEvents()
+  @objc deinit
+}
+final public class StockViewModel {
+  public init(model: ClickmeliveiOSSDK.Product)
+  final public var imageURL: Foundation.URL? {
+    get
+  }
+  final public var isStockBadgeHidden: Swift.Bool {
+    get
+  }
+  final public var stockQuantityForSelectedVariant: Swift.Int {
+    get
+  }
+  final public var isStockEnabled: Swift.Bool {
+    get
+  }
+  final public var isAddToBasketHidden: Swift.Bool {
+    get
+  }
+  final public var remainingStock: Swift.String? {
+    get
+  }
+  final public var colorVariantBadgeCount: Swift.String {
+    get
+  }
+  final public var isColorVariantBadgeHidden: Swift.Bool {
+    get
+  }
+  final public func selectedVariant(selectedVariantId: Swift.Int?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class FeedView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable {
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ListEventsURLRequestBuilder : Alamofire.URLRequestConvertible {
+  var baseURL: Foundation.URL { get }
+  var requestURL: Foundation.URL? { get }
+  var path: Swift.String { get }
+  var parameters: Alamofire.Parameters? { get }
+  var queryItems: [Foundation.URLQueryItem]? { get }
+  var method: ClickmeliveiOSSDK.HTTPMethod { get }
+  var encoding: any Alamofire.ParameterEncoding { get }
+  var urlRequest: Foundation.URLRequest { get }
+  var withHeader: [Swift.String : Swift.String]? { get }
+}
+extension ClickmeliveiOSSDK.ListEventsURLRequestBuilder {
+  public func asURLRequest() throws -> Foundation.URLRequest
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ListEventsView : UIKit.UIView, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) final public var onDetailTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public let tableView: UIKit.UITableView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.PlayerView : AmazonIVSPlayer.IVSPlayer.Delegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func player(_ player: AmazonIVSPlayer.IVSPlayer, didChangeState state: AmazonIVSPlayer.IVSPlayer.State)
+  @_Concurrency.MainActor(unsafe) @objc final public func player(_ player: AmazonIVSPlayer.IVSPlayer, didFailWithError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc final public func player(_ player: AmazonIVSPlayer.IVSPlayer, didChangeVideoSize videoSize: CoreFoundation.CGSize)
+  @_Concurrency.MainActor(unsafe) @objc final public func player(_ player: AmazonIVSPlayer.IVSPlayer, didChangeDuration duration: CoreMedia.CMTime)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class PlayerView : UIKit.UIView {
+  public enum PlayerState {
+    case videoView
+    case videoViewExit
+    case liveView
+    case liveViewExit
+    public static func == (a: ClickmeliveiOSSDK.PlayerView.PlayerState, b: ClickmeliveiOSSDK.PlayerView.PlayerState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Action {
+    case log(position: Swift.Int? = nil, length: Swift.Int? = nil, state: ClickmeliveiOSSDK.PlayerView.PlayerState)
+  }
+  @_Concurrency.MainActor(unsafe) final public var onError: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onLoadingState: ((Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onAction: ((ClickmeliveiOSSDK.PlayerView.Action) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var playbackPositionDisplayLink: QuartzCore.CADisplayLink?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ViewerCountView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) final public let viewerStackView: UIKit.UIStackView
+  @_Concurrency.MainActor(unsafe) final public let ivViewers: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let lblLive: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let lblViewerCount: UIKit.UILabel
+  @objc deinit
+}
+final public class VariantViewModel {
+  public init(model: ClickmeliveiOSSDK.Product.Variant)
+  final public var variantColorTitle: Swift.String {
+    get
+  }
+  final public var variantSizeTitle: Swift.String {
+    get
+  }
+  final public var variantId: Swift.Int {
+    get
+  }
+  final public var variantName: Swift.String {
+    get
+  }
+  final public var isOutOfStockHidden: Swift.Bool {
+    get
+  }
+  final public var isSelected: Swift.Bool {
+    get
+  }
+  final public var images: [Swift.String] {
+    get
+  }
+  final public var variantImageURL: Foundation.URL? {
+    get
+  }
+  final public var stockQuantity: Swift.Int {
+    get
+  }
+  final public var type: ClickmeliveiOSSDK.Product.Variant.VariantType {
+    get
+  }
+  @objc deinit
+}
+@objc final public class LiveRefreshController : ObjectiveC.NSObject {
+  public init(viewModel: ClickmeliveiOSSDK.LiveViewModel)
+  @objc final public func refresh()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SuccessMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.SuccessMapper.Error, b: ClickmeliveiOSSDK.SuccessMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> Foundation.Data
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.Localized {
+  public enum Chat {
+    public static var enterMessage: Swift.String {
+      get
+    }
+  }
+}
+public func getGuestId() -> Swift.String?
+final public class DiscoverViewModel {
+  public init(discoverLoader: any ClickmeliveiOSSDK.DiscoverLoader, liveEventLoader: any ClickmeliveiOSSDK.EventLoader)
+  final public var discoverEventsLoadingState: Swift.Bool
+  final public var onDiscoverEventsLoadingStateChange: ((Swift.Bool) -> Swift.Void)?
+  final public var discoverEvents: [ClickmeliveiOSSDK.DiscoverItem]
+  final public var onDiscoverEventsLoaded: (([ClickmeliveiOSSDK.DiscoverItem]) -> Swift.Void)?
+  final public var onDiscoverEventsError: (() -> Swift.Void)?
+  final public var onLiveEventsLoaded: (([ClickmeliveiOSSDK.Event]) -> Swift.Void)?
+  final public var discoverPage: Swift.Int
+  final public var loadMore: Swift.Bool
+  final public func refreshDiscoverEvents()
+  final public func loadMoreDiscoverEvents()
+  final public func loadLiveEvents(selectedEvent: ClickmeliveiOSSDK.Event)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class FavoritesMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.FavoritesMapper.Error, b: ClickmeliveiOSSDK.FavoritesMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> [ClickmeliveiOSSDK.Product]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class RawFavoritesMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.RawFavoritesMapper.Error, b: ClickmeliveiOSSDK.RawFavoritesMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> [ClickmeliveiOSSDK.FavoriteProduct]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class AddFavoritesMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.AddFavoritesMapper.Error, b: ClickmeliveiOSSDK.AddFavoritesMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class DiscoverViewController : UIKit.UIViewController, ClickmeliveiOSSDK.Layouting {
+  @_Concurrency.MainActor(unsafe) final public var onPipSelected: ((ClickmeliveiOSSDK.Event) -> Swift.Void)?
+  public typealias ViewType = ClickmeliveiOSSDK.DiscoverView
+  @_Concurrency.MainActor(unsafe) public init(discoverViewModel: ClickmeliveiOSSDK.DiscoverViewModel)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) final public func refresh()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override final public func loadView()
+  @_Concurrency.MainActor(unsafe) final public func display(_ sections: [ClickmeliveiOSSDK.CollectionCellController]...)
+}
+extension ClickmeliveiOSSDK.DiscoverViewController {
+  @_Concurrency.MainActor(unsafe) final public func updateEventProducts(viewModels: [ClickmeliveiOSSDK.ProductViewModel])
+}
+extension ClickmeliveiOSSDK.DiscoverViewController {
+  @_Concurrency.MainActor(unsafe) final public func updateEventStatus(with status: ClickmeliveiOSSDK.Event.EventStatus, liveStream: ClickmeliveiOSSDK.Event.LiveStream?)
+}
+extension ClickmeliveiOSSDK.DiscoverViewController {
+  @_Concurrency.MainActor(unsafe) final public func handleError(eventViewModel: ClickmeliveiOSSDK.EventViewModel?)
+}
+extension ClickmeliveiOSSDK.DiscoverViewController {
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
+}
+extension ClickmeliveiOSSDK.DiscoverViewController : UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+}
+@_hasMissingDesignatedInitializers final public class Localized {
+  @objc deinit
+}
+public protocol EventLoader {
+  func load(completionCallback: @escaping ([ClickmeliveiOSSDK.Event]?, (any Swift.Error)?) -> Swift.Void)
+  func loadByType(type: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.Event]?, (any Swift.Error)?) -> Swift.Void)
+}
+extension ClickmeliveiOSSDK.ProductResponseDTO {
+  public func toDomain() -> ClickmeliveiOSSDK.ProductResponse
+}
+public struct ProductResponseDTO : Swift.Codable {
+  public let products: [ClickmeliveiOSSDK.ProductDTO]?
+  public let _metadata: ClickmeliveiOSSDK.ProductResponseDTO.MetaData?
+  public struct MetaData : Swift.Codable {
+    public let totalRecordCount: Swift.Int?
+    public let pageSize: Swift.Int?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_Concurrency.MainActor(unsafe) public class CustomTableDataSource : ObjectiveC.NSObject, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) public init(sections: [[ClickmeliveiOSSDK.TableCellController]], reuseIdentifier: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) public func registerCells(forTableView tableView: UIKit.UITableView)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) public class CustomDataSource : ObjectiveC.NSObject, UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor(unsafe) public init(sections: [[ClickmeliveiOSSDK.CollectionCellController]], reuseIdentifier: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) public func registerCells(forCollectionView collectionView: UIKit.UICollectionView)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class FeedViewController : UIKit.UIViewController, ClickmeliveiOSSDK.Layouting {
+  public typealias ViewType = ClickmeliveiOSSDK.FeedView
+  @_Concurrency.MainActor(unsafe) final public var onClosePipTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public init(initialIndexPath: Foundation.IndexPath, feedViewModel: ClickmeliveiOSSDK.FeedViewModel, chatViewModel: ClickmeliveiOSSDK.ChatViewModel, eventStatsViewModel: ClickmeliveiOSSDK.EventStatsViewModel, disablePip: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override final public func loadView()
+  @_Concurrency.MainActor(unsafe) final public func display(_ sections: [ClickmeliveiOSSDK.CollectionCellController]...)
+  @_Concurrency.MainActor(unsafe) final public func displayChat(controllers: [ClickmeliveiOSSDK.TableCellController])
+}
+extension ClickmeliveiOSSDK.FeedViewController {
+  @_Concurrency.MainActor(unsafe) final public func enterPIPModeConfig()
+  @_Concurrency.MainActor(unsafe) final public func enterFullScreenConfig()
+}
+extension ClickmeliveiOSSDK.FeedViewController {
+  @_Concurrency.MainActor(unsafe) final public func handleError(eventViewModel: ClickmeliveiOSSDK.EventViewModel?)
+}
+extension ClickmeliveiOSSDK.FeedViewController {
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
+}
+extension ClickmeliveiOSSDK.FeedViewController : UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+}
+extension ClickmeliveiOSSDK.FeedViewController {
+  @_Concurrency.MainActor(unsafe) final public func updateEventProducts(viewModels: [ClickmeliveiOSSDK.ProductViewModel])
+}
+extension ClickmeliveiOSSDK.FeedViewController : PIPKit.PIPUsable {
+  @_Concurrency.MainActor(unsafe) final public var initialState: PIPKit.PIPState {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var initialPosition: PIPKit.PIPPosition {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var pipSize: CoreFoundation.CGSize {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var pipCorner: PIPKit.PIPCorner? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public func onMinimizeTapped()
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+}
+extension ClickmeliveiOSSDK.FeedViewController : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) final public func displayComposeMessageTextView()
+  @_Concurrency.MainActor(unsafe) @objc final public func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc final public func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+}
+extension ClickmeliveiOSSDK.ChatView {
+  @_Concurrency.MainActor(unsafe) final public func display(_ sections: [ClickmeliveiOSSDK.TableCellController]...)
+  @_Concurrency.MainActor(unsafe) final public func clearChat()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ChatView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.ChatView : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+public struct DiscoverDTO : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DiscoverItemDTO : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers final public class RemoteEventProductLoader : ClickmeliveiOSSDK.RemoteClient<[ClickmeliveiOSSDK.Product]>, ClickmeliveiOSSDK.EventProductLoader {
+  final public func load(eventId: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.Product]?, (any Swift.Error)?) -> Swift.Void)
+  override public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.StockView {
+  @_Concurrency.MainActor(unsafe) final public func configure(with model: ClickmeliveiOSSDK.StockViewModel)
+  @_Concurrency.MainActor(unsafe) final public func setFont(font: UIKit.UIFont)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class StockView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class LiveBadgeCountMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.LiveBadgeCountMapper.Error, b: ClickmeliveiOSSDK.LiveBadgeCountMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> ClickmeliveiOSSDK.LiveBadgeCount
+  @objc deinit
+}
+public struct Product : Swift.Hashable {
+  public let id: Swift.Int
+  public let name: Swift.String
+  public let image: Swift.String
+  public let discountedPrice: Swift.Double?
+  public let price: Swift.Double?
+  public let stockQuantity: Swift.Int
+  public let variants: [ClickmeliveiOSSDK.Product.Variant]?
+  public let attributes: [ClickmeliveiOSSDK.Attribute]?
+  public let isSpecialOffer: Swift.Bool?
+  public let brand: ClickmeliveiOSSDK.Brand?
+  public let seller: ClickmeliveiOSSDK.Seller?
+  public let description: Swift.String?
+  public let variantId: Swift.Int?
+  public let categoryName: Swift.String?
+  public let images: [Swift.String]?
+  public let productColors: [ClickmeliveiOSSDK.Product.Variant]?
+  public var selectedVariantId: Swift.Int?
+  public var selectedVariantName: Swift.String? {
+    get
+  }
+  public var stockQuantityForSelectedVariant: Swift.Int {
+    get
+  }
+  public var isStockBadgeVisible: Swift.Bool {
+    get
+  }
+  public var isStockEnabled: Swift.Bool {
+    get
+  }
+  public var colorVariantBadgeCount: Swift.Int {
+    get
+  }
+  public var isColorVariantBadgeVisible: Swift.Bool {
+    get
+  }
+  public func showPrice() -> Swift.String
+  public func showDiscountedPrice() -> Swift.String?
+  public struct Variant : Swift.Hashable {
+    public let id: Swift.Int
+    public let variant: ClickmeliveiOSSDK.Product.Variant.VariantType
+    public let name: Swift.String
+    public let image: Swift.String?
+    public let images: [Swift.String]
+    public let stockQuantity: Swift.Int
+    public let sub: [ClickmeliveiOSSDK.Product.Variant]
+    public let isSelected: Swift.Bool
+    public var isStockEnabled: Swift.Bool {
+      get
+    }
+    public var isColorVariant: Swift.Bool {
+      get
+    }
+    @frozen public enum VariantType : Swift.String {
+      case COLOR
+      case BODY_SIZE
+      case NONE
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: ClickmeliveiOSSDK.Product.Variant, b: ClickmeliveiOSSDK.Product.Variant) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Product, b: ClickmeliveiOSSDK.Product) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Attribute : Swift.Hashable, Swift.Identifiable {
+  public let id: Foundation.UUID
+  public let name: Swift.String
+  public let label: Swift.String
+  public init(name: Swift.String, label: Swift.String)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Attribute, b: ClickmeliveiOSSDK.Attribute) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Brand : Swift.Hashable {
+  public let id: Swift.Int?
+  public let name: Swift.String?
+  public let image: Swift.String?
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Brand, b: ClickmeliveiOSSDK.Brand) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Event : Swift.Hashable {
+  public let id: Swift.Int
+  public let categoryId: Swift.Int
+  public let image: Swift.String?
+  public let user: ClickmeliveiOSSDK.User?
+  public let title: Swift.String
+  public let description: Swift.String?
+  public let startingDate: Foundation.Date?
+  public var status: ClickmeliveiOSSDK.Event.EventStatus
+  public var type: ClickmeliveiOSSDK.Event.EventType
+  public let hasSpecialOffer: Swift.Bool
+  public let realViewer: Swift.Int
+  public let virtualViewer: Swift.Int
+  public var liveStream: ClickmeliveiOSSDK.Event.LiveStream?
+  public let video: Swift.String?
+  public let operationCode: Swift.String?
+  public let followingUser: Swift.Bool
+  public let influencer: ClickmeliveiOSSDK.User?
+  public enum EventStatus {
+    case CANCELLED
+    case UPCOMING
+    case LIVE
+    case ENDED
+    public static func == (a: ClickmeliveiOSSDK.Event.EventStatus, b: ClickmeliveiOSSDK.Event.EventStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum EventType : Swift.Int {
+    case LIVE
+    case VIDEO
+    case LIVE_AUCTION
+    public func getTypeText() -> Swift.String
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum AuctionStatus : Swift.Int {
+    case STARTED
+    case FAILED
+    case SUCCESS
+    case ENDED
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct LiveStream : Swift.Hashable {
+    public let playbackUrl: Swift.String
+    public let realViewer: Swift.Int
+    public let virtualViewer: Swift.Int
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: ClickmeliveiOSSDK.Event.LiveStream, b: ClickmeliveiOSSDK.Event.LiveStream) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var viewerCount: Swift.Int {
+    get
+  }
+  public var isViewerCountHidden: Swift.Bool {
+    get
+  }
+  public var merchant: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Event, b: ClickmeliveiOSSDK.Event) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class EndedStreamView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+public protocol EventStatsViewerLoader {
+  typealias Result = Swift.Result<ClickmeliveiOSSDK.EventStats, any Swift.Error>
+  func connect(eventId: Swift.Int, completion: @escaping (Self.Result) -> Swift.Void)
+  func disconnect()
+}
+final public class EventViewModel {
+  final public var model: ClickmeliveiOSSDK.Event
+  final public var discoverId: Swift.String?
+  convenience public init(model: ClickmeliveiOSSDK.Event, discoverId: Swift.String? = nil)
+  public init(model: ClickmeliveiOSSDK.Event)
+  final public func updateStatus(_ status: ClickmeliveiOSSDK.Event.EventStatus)
+  final public func updateStream(_ status: ClickmeliveiOSSDK.Event.EventStatus, liveStream: ClickmeliveiOSSDK.Event.LiveStream?)
+  final public var isSelected: Swift.Bool
+  final public var id: Swift.Int {
+    get
+  }
+  final public var imageURL: Foundation.URL? {
+    get
+  }
+  final public var title: Swift.String? {
+    get
+  }
+  final public var sellerUsername: Swift.String? {
+    get
+  }
+  final public var sellerImageURL: Foundation.URL? {
+    get
+  }
+  final public var startingDate: Swift.String {
+    get
+  }
+  final public var videoURL: Foundation.URL? {
+    get
+  }
+  final public var description: Swift.String? {
+    get
+  }
+  final public var status: ClickmeliveiOSSDK.Event.EventStatus {
+    get
+  }
+  final public var type: ClickmeliveiOSSDK.Event.EventType {
+    get
+  }
+  final public var sellerId: Swift.Int? {
+    get
+  }
+  final public var sellerName: Swift.String {
+    get
+  }
+  final public var isDateViewHidden: Swift.Bool {
+    get
+  }
+  final public var isSpecialOfferHidden: Swift.Bool {
+    get
+  }
+  final public var isPlayImageHidden: Swift.Bool {
+    get
+  }
+  final public var isViewerImageHidden: Swift.Bool {
+    get
+  }
+  final public var isLiveImageHidden: Swift.Bool {
+    get
+  }
+  final public var isViewerCountHidden: Swift.Bool {
+    get
+  }
+  final public var isChatHidden: Swift.Bool {
+    get
+  }
+  final public var viewerCount: Swift.String {
+    get
+  }
+  final public var liveTitle: Swift.String {
+    get
+  }
+  final public var endedStreamTitle: Swift.String {
+    get
+  }
+  final public var isBid: Swift.Bool {
+    get
+  }
+  final public var isBidViewHidden: Swift.Bool {
+    get
+  }
+  final public var isBasketHidden: Swift.Bool {
+    get
+  }
+  final public var isProductViewHidden: Swift.Bool {
+    get
+  }
+  final public var isHideChatViewHidden: Swift.Bool {
+    get
+  }
+  final public var isPaymentViewHidden: Swift.Bool {
+    get
+  }
+  final public var bidIndicatorTitle: Swift.String {
+    get
+  }
+  final public var typeTitle: Swift.String {
+    get
+  }
+  final public var tapToJoinTitle: Swift.String {
+    get
+  }
+  @objc deinit
+}
+final public class EventFilterItemViewModel {
+  public init(interest: ClickmeliveiOSSDK.Interests, isSelected: Swift.Bool = false)
+  final public var title: Swift.String {
+    get
+  }
+  final public var countString: Swift.String {
+    get
+  }
+  final public var count: Swift.Int {
+    get
+  }
+  final public var selected: Swift.Bool {
+    get
+  }
+  final public func toggleSelection()
+  final public func updateSelected(_ select: Swift.Bool)
+  final public var interestId: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class LiveMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.LiveMapper.Error, b: ClickmeliveiOSSDK.LiveMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> [ClickmeliveiOSSDK.Live]
+  @objc deinit
+}
+public struct Discover : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Discover, b: ClickmeliveiOSSDK.Discover) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct DiscoverItem : Swift.Hashable {
+  public let id: Swift.String
+  public let event: ClickmeliveiOSSDK.Event
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.DiscoverItem, b: ClickmeliveiOSSDK.DiscoverItem) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum DiscoverViewType : Swift.Int {
+  case swiped
+  case viewed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) final public class LiveCellController : ObjectiveC.NSObject, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) public init(viewModel: ClickmeliveiOSSDK.LiveItemViewModel, eventCellControllers: [ClickmeliveiOSSDK.EventCellController], detailSelected: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.InterestsView {
+  @_Concurrency.MainActor(unsafe) final public func configure(viewModel: ClickmeliveiOSSDK.InterestsViewModel)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class InterestsView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable {
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct CMLError : Swift.Error {
+  public let message: Swift.String
+}
+extension ClickmeliveiOSSDK.CMLError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class LiveOverTopView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable {
+  @_Concurrency.MainActor(unsafe) final public func setupViews()
+  @_Concurrency.MainActor(unsafe) final public func setupLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class LiveViewController : UIKit.UIViewController, ClickmeliveiOSSDK.Layouting {
+  public typealias ViewType = ClickmeliveiOSSDK.LiveView
+  @_Concurrency.MainActor(unsafe) final public var refreshController: ClickmeliveiOSSDK.LiveRefreshController?
+  @_Concurrency.MainActor(unsafe) public init(refreshController: ClickmeliveiOSSDK.LiveRefreshController)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func loadView()
+  @_Concurrency.MainActor(unsafe) final public func display(_ sections: [ClickmeliveiOSSDK.TableCellController]...)
+}
+extension ClickmeliveiOSSDK.LiveViewController : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class LargeEventCell : ClickmeliveiOSSDK.EventCell {
+  @_Concurrency.MainActor(unsafe) override final public func setupViews()
+  @_Concurrency.MainActor(unsafe) override final public func setupLayout()
+  @objc deinit
+}
+public struct ProductResponse {
+  public let products: [ClickmeliveiOSSDK.Product]
+  public let pageSize: Swift.Int
+  public let totalRecordCount: Swift.Int
+}
+public protocol TokenStore {
+  func deleteToken()
+  func saveToken(_ token: Swift.String) throws
+  func retrieveToken() -> Swift.String?
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ProductCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) public func configure(with viewModel: ClickmeliveiOSSDK.ProductViewModel, stockViewModel: ClickmeliveiOSSDK.StockViewModel, imageLoader: any ClickmeliveiOSSDK.ImageLoader)
+  @_Concurrency.MainActor(unsafe) final public let ivProduct: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let lblProductName: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let priceStackView: UIKit.UIStackView
+  @_Concurrency.MainActor(unsafe) final public let priceStackHorizontalView: UIKit.UIStackView
+  @_Concurrency.MainActor(unsafe) final public let lblPrice: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let lblPriceDecimal: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let lblDiscountedPrice: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let stockView: ClickmeliveiOSSDK.StockView
+  @_Concurrency.MainActor(unsafe) final public let colorVariantView: ClickmeliveiOSSDK.ColorVariantView
+  @_Concurrency.MainActor(unsafe) final public let sellerStackView: UIKit.UIStackView
+  @_Concurrency.MainActor(unsafe) final public let ivSeller: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) final public let lblUsername: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) final public let ivSpecialOffer: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) public func setupViews()
+  @_Concurrency.MainActor(unsafe) public func setupLayout()
+  @objc deinit
+}
+public struct SellerDTO : Swift.Codable {
+  public struct ItemDTO : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension ClickmeliveiOSSDK.ColorVariantView {
+  @_Concurrency.MainActor(unsafe) final public func configure(with model: ClickmeliveiOSSDK.StockViewModel)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ColorVariantView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+public enum StreamTypes : Swift.Int {
+  case bidAndBuy
+  case liveStream
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol Layoutable : AnyObject {
+  func setupViews()
+  func setupLayout()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class AttributeCell : UIKit.UITableViewCell {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DiscoverItemsMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.DiscoverItemsMapper.Error, b: ClickmeliveiOSSDK.DiscoverItemsMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> [ClickmeliveiOSSDK.DiscoverItem]
+  @objc deinit
+}
+public struct EventResponse {
+  public let events: [ClickmeliveiOSSDK.Event]
+  public let pageSize: Swift.Int
+  public let totalRecordCount: Swift.Int
+}
+@frozen public enum DiscoverAction {
+  case minimizeTapped
+  case eventProductsTapped(event: ClickmeliveiOSSDK.Event, bottomSheetHeight: ClickmeliveiOSSDK.BottomSheetHeight)
+  case shareTapped(eventViewModel: ClickmeliveiOSSDK.EventViewModel)
+  case feedLoading(isLoading: Swift.Bool)
+  case streamEnded
+  case liveEventSelected(event: ClickmeliveiOSSDK.Event)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class DiscoverCell : UIKit.UICollectionViewCell {
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) final public let eventTypeView: ClickmeliveiOSSDK.EventTypeView
+}
+extension UIKit.UIColor {
+  convenience public init?(hex: Swift.String)
+}
+public protocol BadgeView : AnyObject {
+  var badgeView: UIKit.UIView? { get set }
+  var badgeLabel: UIKit.UILabel? { get set }
+  func showBadge(count: Swift.Int, badgeColor: UIKit.UIColor, onBottom: Swift.Bool)
+  func hideBadge()
+}
+extension ClickmeliveiOSSDK.BadgeView where Self : UIKit.UIView {
+  public func showBadge(count: Swift.Int, badgeColor: UIKit.UIColor = .red, onBottom: Swift.Bool = false)
+  public func hideBadge()
+}
+public struct InterestsDTO : Swift.Decodable {
+  public var list: [ClickmeliveiOSSDK.InterestsItemDTO]
+  public init(list: [ClickmeliveiOSSDK.InterestsItemDTO])
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension ClickmeliveiOSSDK.InterestsDTO {
+  public func toDomain() -> ClickmeliveiOSSDK.InterestsList
+}
+public struct InterestsItemDTO : Swift.Decodable {
+  public var interestsId: Swift.Int
+  public var text: Swift.String
+  public var ico: Swift.String?
+  public var createOn: Swift.String?
+  public var count: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension ClickmeliveiOSSDK.InterestsItemDTO {
+  public func toDomain() -> ClickmeliveiOSSDK.Interests
+}
+public struct Interests : Swift.Hashable {
+  public var id: Swift.Int
+  public var title: Swift.String
+  public var icon: Swift.String
+  public var count: Swift.Int
+  public init(id: Swift.Int, title: Swift.String, icon: Swift.String, count: Swift.Int)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Interests, b: ClickmeliveiOSSDK.Interests) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct InterestsList : Swift.Hashable {
+  public var list: [ClickmeliveiOSSDK.Interests]
+  public init(list: [ClickmeliveiOSSDK.Interests])
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.InterestsList, b: ClickmeliveiOSSDK.InterestsList) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct InterestsEventCountListDTO : Swift.Decodable {
+  public var eventCount: Swift.Int
+  public var eventCountsByInterests: [ClickmeliveiOSSDK.InterestsItemDTO]
+  public func toDomain() -> ClickmeliveiOSSDK.InterestsEventCountList
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InterestsEventCountList : Swift.Hashable {
+  public var eventCount: Swift.Int
+  public var eventCountsByInterests: [ClickmeliveiOSSDK.Interests]
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.InterestsEventCountList, b: ClickmeliveiOSSDK.InterestsEventCountList) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc final public class HomePageRefreshController : ObjectiveC.NSObject {
+  public init(viewModel: ClickmeliveiOSSDK.HomePageViewModel)
+  @objc deinit
+}
+public protocol InterestsLoader {
+  func load(completionCallback: @escaping ([ClickmeliveiOSSDK.Interests]?, (any Swift.Error)?) -> Swift.Void)
+  func loadByType(_ type: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.Interests]?, (any Swift.Error)?) -> Swift.Void)
+}
+public protocol InterestsSaver {
+  func load(gender: Swift.Int, idList: [Swift.Int], completionCallback: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+}
+@_inheritsConvenienceInitializers final public class RemoteInterestsLoader : ClickmeliveiOSSDK.RemoteClient<[ClickmeliveiOSSDK.Interests]>, ClickmeliveiOSSDK.InterestsLoader {
+  final public func load(completionCallback: @escaping ([ClickmeliveiOSSDK.Interests]?, (any Swift.Error)?) -> Swift.Void)
+  final public func loadByType(_ type: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.Interests]?, (any Swift.Error)?) -> Swift.Void)
+  override public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers final public class RemoteInterestsSaver : ClickmeliveiOSSDK.RemoteClient<Any>, ClickmeliveiOSSDK.InterestsSaver {
+  final public func load(gender: Swift.Int, idList: [Swift.Int], completionCallback: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  override public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  @objc deinit
+}
+public struct Agreement {
+  public let content: Swift.String
+}
+public protocol LiveGroupEventLoader {
+  func load(type: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.Live]?, (any Swift.Error)?) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers final public class InterestsMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.InterestsMapper.Error, b: ClickmeliveiOSSDK.InterestsMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> [ClickmeliveiOSSDK.Interests]
+  @objc deinit
+}
+final public class URLSessionHTTPClient : ClickmeliveiOSSDK.HTTPClient {
+  public init(session: Foundation.URLSession)
+  final public func execute(with request: Foundation.URLRequest, completion: @escaping (Swift.Result<(Foundation.Data, Foundation.HTTPURLResponse), any Swift.Error>) -> Swift.Void) -> any ClickmeliveiOSSDK.HTTPClientTask
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) final public class EventFilterCellController : ObjectiveC.NSObject, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) public init(viewModel: ClickmeliveiOSSDK.EventFilterItemViewModel)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class LiveEventsView : UIKit.UIView, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) final public var onDetailTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public let tableView: UIKit.UITableView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc deinit
+}
+public struct ChatConnectionParameters {
+  public static let CHAT_ROOM_NAME_HEADER_FIELD: Swift.String
+  public static let CHAT_USERNAME_HEADER_FIELD: Swift.String
+  public static let CHAT_USER_ID_HEADER_FIELD: Swift.String
+}
+@frozen public enum FeedAction {
+  case minimizeTapped
+  case eventProductsTapped(event: ClickmeliveiOSSDK.Event, bottomSheetHeight: ClickmeliveiOSSDK.BottomSheetHeight, cellType: ClickmeliveiOSSDK.EventProductCellType)
+  case feedLoading(isLoading: Swift.Bool)
+  case composeMessageTapped
+  case userTapped(userId: Swift.Int?, event: ClickmeliveiOSSDK.Event)
+  case closeTapped
+  case eventRated(eventId: Swift.Int, rate: Swift.Int)
+  case streamEnded
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class FeedCell : UIKit.UICollectionViewCell {
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) final public let ivUser: UIKit.UIImageView
+}
+final public class InterestsViewModel {
+  final public var interests: [ClickmeliveiOSSDK.Interests]?
+  final public var onInterestsLoaded: (([ClickmeliveiOSSDK.Interests]?) -> Swift.Void)?
+  public init(interestsLoader: any ClickmeliveiOSSDK.InterestsLoader)
+  final public func loadInterests()
+  final public func loadInterestsByType(type: ClickmeliveiOSSDK.Event.EventType)
+  final public var titleGender: Swift.String {
+    get
+  }
+  final public var subTitleGender: Swift.String {
+    get
+  }
+  final public var maleText: Swift.String {
+    get
+  }
+  final public var femaleText: Swift.String {
+    get
+  }
+  final public var lgbtText: Swift.String {
+    get
+  }
+  final public var titleInterests: Swift.String {
+    get
+  }
+  final public var subTitleInterests: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.Localized {
+  public enum Interests {
+    public static var table: Swift.String {
+      get
+    }
+    public static var titleGender: Swift.String {
+      get
+    }
+    public static var subTitleGender: Swift.String {
+      get
+    }
+    public static var maleText: Swift.String {
+      get
+    }
+    public static var femaleText: Swift.String {
+      get
+    }
+    public static var lgbtText: Swift.String {
+      get
+    }
+    public static var titleInterests: Swift.String {
+      get
+    }
+    public static var subTitleInterests: Swift.String {
+      get
+    }
+  }
+}
+public struct CollectionCellController {
+  public init(id: Swift.AnyHashable, _ dataSource: any UIKit.UICollectionViewDataSource)
+}
+extension ClickmeliveiOSSDK.CollectionCellController : Swift.Equatable {
+  public static func == (lhs: ClickmeliveiOSSDK.CollectionCellController, rhs: ClickmeliveiOSSDK.CollectionCellController) -> Swift.Bool
+}
+extension ClickmeliveiOSSDK.CollectionCellController : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class RemoteClient<Resource> {
+  public typealias Mapper = (Foundation.Data, Foundation.HTTPURLResponse) throws -> Resource
+  public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  public func load(urlRequest: Foundation.URLRequest, mapperFunction: @escaping (Foundation.Data, Foundation.HTTPURLResponse) throws -> Resource, completionCallback: @escaping (Resource?, (any Swift.Error)?) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class EventMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.EventMapper.Error, b: ClickmeliveiOSSDK.EventMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> ClickmeliveiOSSDK.Event
+  @objc deinit
+}
+public struct Live : Swift.Hashable {
+  public let groupId: Swift.Int
+  public let name: Swift.String
+  public let events: [ClickmeliveiOSSDK.Event]
+  public let size: ClickmeliveiOSSDK.Size
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.Live, b: ClickmeliveiOSSDK.Live) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol EventDetailLoader {
+  func load(eventId: Swift.Int, completionCallback: @escaping (ClickmeliveiOSSDK.Event?, (any Swift.Error)?) -> Swift.Void)
+  func loadStatus(eventId: Swift.Int, completionCallback: @escaping (ClickmeliveiOSSDK.Event?, (any Swift.Error)?) -> Swift.Void)
+}
+public struct User : Swift.Hashable {
+  public let id: Swift.Int
+  public let username: Swift.String
+  public let image: Swift.String?
+  public let fullName: Swift.String
+  public let phone: Swift.String
+  public let email: Swift.String
+  public let type: ClickmeliveiOSSDK.User.UserType?
+  public let followerCount: Swift.Int
+  public let followingCount: Swift.Int
+  public let isChatPrivate: Swift.Bool
+  public enum UserType : Swift.Int, Swift.Encodable {
+    case BROADCASTER
+    case INFLUENCER
+    public static func get(type: Swift.Int?) -> ClickmeliveiOSSDK.User.UserType?
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public func toDTO() -> ClickmeliveiOSSDK.UserDTO
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ClickmeliveiOSSDK.User, b: ClickmeliveiOSSDK.User) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct EventStats {
+  public let serverTime: Foundation.Date?
+  public let virtualViewer: Swift.Int
+  public let type: ClickmeliveiOSSDK.EventStatType?
+  public let status: ClickmeliveiOSSDK.Event.EventStatus
+  public let auction: ClickmeliveiOSSDK.Auction?
+}
+public struct Auction {
+}
+public struct Bidder {
+}
+@frozen public enum EventStatType : Swift.String {
+  case INITIAL
+  case VIEWER
+  case STATUS
+  case AUCTION
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AuctionPaymentInfo {
+  public let addressId: Swift.Int
+  public let creditCardId: Swift.Int
+  public let auctionId: Swift.Int
+  public init(addressId: Swift.Int, creditCardId: Swift.Int, auctionId: Swift.Int)
+}
+final public class MessageViewModel {
+  public init(model: ClickmeliveiOSSDK.Message)
+  final public var onKVKKLoaded: ((ClickmeliveiOSSDK.Agreement) -> Swift.Void)?
+  final public var username: Swift.String {
+    get
+  }
+  final public var messageWithUsername: Swift.String {
+    get
+  }
+  final public var message: Swift.String {
+    get
+  }
+  final public var type: ClickmeliveiOSSDK.Message.MessageType {
+    get
+  }
+  final public func loadKVKK()
+  @objc deinit
+}
+final public class EventCellController {
+  final public let eventViewModel: ClickmeliveiOSSDK.EventViewModel
+  final public var cell: ClickmeliveiOSSDK.EventCell?
+  public init(eventViewModel: ClickmeliveiOSSDK.EventViewModel, imageLoader: any ClickmeliveiOSSDK.ImageLoader, eventSelected: @escaping (Foundation.IndexPath) -> Swift.Void)
+  final public func releaseCellForReuse()
+  final public func selected(at indexPath: Foundation.IndexPath)
+  @objc deinit
+}
+public struct TableSectionController {
+  public let controllers: [ClickmeliveiOSSDK.TableCellController]
+  public init(controllers: [ClickmeliveiOSSDK.TableCellController])
+}
+final public class LiveItemViewModel {
+  public init(model: ClickmeliveiOSSDK.Live)
+  final public var name: Swift.String {
+    get
+  }
+  final public var size: ClickmeliveiOSSDK.Size {
+    get
+  }
+  final public var detailTitlePazarama: Swift.String {
+    get
+  }
+  final public var detailTitle: Swift.String {
+    get
+  }
+  final public var groupID: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BottomSheetView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable {
+  @_Concurrency.MainActor(unsafe) public func setupViews()
+  @_Concurrency.MainActor(unsafe) public func setupLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.ProductDTO {
+  public func toDomain() -> ClickmeliveiOSSDK.Product
+}
+public struct BrandDTO : Swift.Codable {
+  public let id: Swift.Int?
+  public let name: Swift.String?
+  public let image: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProductDTO : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AttributesDTO : Swift.Codable {
+  public let name: Swift.String
+  public let label: Swift.String
+  public let attributeId: Swift.Int
+  public func toDomain() -> ClickmeliveiOSSDK.Attribute
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension ClickmeliveiOSSDK.BrandDTO {
+  public func toDomain() -> ClickmeliveiOSSDK.Brand
+}
+@_inheritsConvenienceInitializers final public class RemoteLiveGroupEventLoader : ClickmeliveiOSSDK.RemoteClient<[ClickmeliveiOSSDK.Live]>, ClickmeliveiOSSDK.LiveGroupEventLoader {
+  final public func load(type: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.Live]?, (any Swift.Error)?) -> Swift.Void)
+  override public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  @objc deinit
+}
+public struct TableCellController {
+  public init(id: Swift.AnyHashable, _ dataSource: any UIKit.UITableViewDataSource)
+}
+extension ClickmeliveiOSSDK.TableCellController : Swift.Equatable {
+  public static func == (lhs: ClickmeliveiOSSDK.TableCellController, rhs: ClickmeliveiOSSDK.TableCellController) -> Swift.Bool
+}
+extension ClickmeliveiOSSDK.TableCellController : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class EventProductsViewModel {
+  public init(eventProductLoader: any ClickmeliveiOSSDK.EventProductLoader)
+  final public func getLocalizedTotal(_ total: Swift.Int) -> Swift.String
+  final public var products: [ClickmeliveiOSSDK.Product]
+  final public var onEventProductsLoaded: (([ClickmeliveiOSSDK.Product]) -> Swift.Void)?
+  final public var onEventProductsLoadingStateChange: ((Swift.Bool) -> Swift.Void)?
+  final public func loadEventProducts(eventId: Swift.Int)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class InfiniteScrollBuilder<Resource> {
+  public func prepareForInfiniteScroll(array: [Resource]) -> [Resource]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ProductResponseMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.ProductResponseMapper.Error, b: ClickmeliveiOSSDK.ProductResponseMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> [ClickmeliveiOSSDK.Product]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class InterestsViewController : UIKit.UIViewController, ClickmeliveiOSSDK.Layouting {
+  @_Concurrency.MainActor(unsafe) final public var onMaleTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onFemaleTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onLgbtTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onDoneTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onSkipTapped: (() -> Swift.Void)?
+  public typealias ViewType = ClickmeliveiOSSDK.InterestsView
+  @_Concurrency.MainActor(unsafe) public init(viewModel: ClickmeliveiOSSDK.InterestsViewModel)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func loadView()
+  @_Concurrency.MainActor(unsafe) final public func display(_ sections: [ClickmeliveiOSSDK.CollectionCellController]...)
+  @_Concurrency.MainActor(unsafe) final public func display()
+}
+extension ClickmeliveiOSSDK.InterestsViewController : UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+@_inheritsConvenienceInitializers final public class RemoteDiscoverLoader : ClickmeliveiOSSDK.RemoteClient<[ClickmeliveiOSSDK.DiscoverItem]>, ClickmeliveiOSSDK.DiscoverLoader {
+  final public func load(page: Swift.Int, completionCallback: @escaping ([ClickmeliveiOSSDK.DiscoverItem]?, (any Swift.Error)?) -> Swift.Void)
+  override public init(client: any ClickmeliveiOSSDK.HTTPClient, baseURL: Foundation.URL, authTokenLoader: ClickmeliveiOSSDK.AuthTokenLoader? = nil)
+  @objc deinit
+}
+public enum AgreementType {
+  case kvkk
+  case orderContract(orderId: Swift.Int)
+}
+@_hasMissingDesignatedInitializers final public class ErrorMapper {
+  public static func map(_ error: any Swift.Error) -> ClickmeliveiOSSDK.CMLError
+  @objc deinit
+}
+@objc final public class EventProductsRefreshController : ObjectiveC.NSObject {
+  public init(viewModel: ClickmeliveiOSSDK.EventProductsViewModel, eventId: Swift.Int)
+  @objc final public func refresh()
+  @objc deinit
+}
+final public class LiveViewModel {
+  final public var type: Swift.Int
+  public init(liveEventLoader: any ClickmeliveiOSSDK.LiveGroupEventLoader, liveBadgeLoader: any ClickmeliveiOSSDK.LiveBadgeLoader, type: Swift.Int)
+  final public var onEventsLoaded: (([ClickmeliveiOSSDK.Live]) -> Swift.Void)?
+  final public var onEventsLoadingStateChange: ((Swift.Bool) -> Swift.Void)?
+  final public var onError: ((Swift.String) -> Swift.Void)?
+  final public var onLiveBadgeCountLoaded: ((Swift.Int) -> Swift.Void)?
+  final public func loadLiveEvents()
+  final public func loadLiveBadgeCount()
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.Localized {
+  public enum EventProducts {
+    public static var total: Swift.String {
+      get
+    }
+  }
+}
+final public class ChatViewModel {
+  public typealias Observer<T> = ((T) -> Swift.Void)
+  public init(chatLoader: any ClickmeliveiOSSDK.ChatLoader)
+  final public var messagesQueue: ClickmeliveiOSSDK.Queue<ClickmeliveiOSSDK.Message>
+  final public var onMessageReceived: ClickmeliveiOSSDK.ChatViewModel.Observer<[ClickmeliveiOSSDK.Message]>?
+  final public func listenChatMessages(event: ClickmeliveiOSSDK.Event)
+  final public func disconnect()
+  final public var enterMessage: Swift.String {
+    get
+  }
+  final public func sendMessage(_ message: Swift.String)
+  @objc deinit
+}
+public enum BottomSheetHeight {
+  case customHeight(_: CoreFoundation.CGFloat)
+  case defaultHeight
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BottomSheetViewController : UIKit.UIViewController, ClickmeliveiOSSDK.Layouting {
+  public typealias ViewType = ClickmeliveiOSSDK.BottomSheetView
+  @_Concurrency.MainActor(unsafe) public init(bottomSheetHeight: ClickmeliveiOSSDK.BottomSheetHeight)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
+  @objc @_Concurrency.MainActor(unsafe) public func handleCloseAction()
+}
+public enum EventProductCellType {
+  case detailHidden
+  case normal
+  public static func == (a: ClickmeliveiOSSDK.EventProductCellType, b: ClickmeliveiOSSDK.EventProductCellType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) final public class EventProductCellController : ObjectiveC.NSObject, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) final public var onAddToBasket: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onHasVariant: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onProductSelected: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public init(productViewModel: ClickmeliveiOSSDK.ProductViewModel, stockViewModel: ClickmeliveiOSSDK.StockViewModel, imageLoader: any ClickmeliveiOSSDK.ImageLoader, cellType: ClickmeliveiOSSDK.EventProductCellType)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc deinit
+}
+final public class HomePageViewModel {
+  public init(liveBadgeLoader: any ClickmeliveiOSSDK.LiveBadgeLoader)
+  final public var onLiveBadgeCountLoaded: ((Swift.Int) -> Swift.Void)?
+  final public func loadBadges()
+  final public func loadLiveBadge()
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.InterestCell {
+  @_Concurrency.MainActor(unsafe) final public func select()
+  @_Concurrency.MainActor(unsafe) final public func deSelect()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class InterestCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) final public var cellIsSelected: Swift.Bool
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.EventResponseDTO {
+  public func toDomain() -> ClickmeliveiOSSDK.EventResponse
+}
+public struct EventResponseDTO : Swift.Codable {
+  public let events: [ClickmeliveiOSSDK.EventDTO]?
+  public let _metadata: ClickmeliveiOSSDK.EventResponseDTO.MetaData?
+  public struct MetaData : Swift.Codable {
+    public let totalRecordCount: Swift.Int?
+    public let pageSize: Swift.Int?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class AgreementMapper {
+  public enum Error : Swift.Error {
+    case invalidData
+    public static func == (a: ClickmeliveiOSSDK.AgreementMapper.Error, b: ClickmeliveiOSSDK.AgreementMapper.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func map(_ data: Foundation.Data, from response: Foundation.HTTPURLResponse) throws -> ClickmeliveiOSSDK.Agreement
+  @objc deinit
+}
+public protocol LiveBadgeLoader {
+  func load(completionCallback: @escaping (ClickmeliveiOSSDK.LiveBadgeCount?, (any Swift.Error)?) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlaceholderView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var onButtonTapped: (() -> ())?
+  @_Concurrency.MainActor(unsafe) public func populate(imageWidth: CoreFoundation.CGFloat, imageHeight: CoreFoundation.CGFloat, image: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func setTitle(_ title: Swift.String?)
+  @objc deinit
+}
+final public class RemoteEventStatsViewerLoader : ClickmeliveiOSSDK.EventStatsViewerLoader {
+  public typealias Result = Swift.Result<ClickmeliveiOSSDK.EventStats, any Swift.Error>
+  public init(client: ClickmeliveiOSSDK.WebSocketConnector, baseURL: Foundation.URL)
+  final public func connect(eventId: Swift.Int, completion: @escaping (ClickmeliveiOSSDK.RemoteEventStatsViewerLoader.Result) -> Swift.Void)
+  final public func disconnect()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class SmallEventCell : ClickmeliveiOSSDK.EventCell {
+  @_Concurrency.MainActor(unsafe) override final public func setupViews()
+  @_Concurrency.MainActor(unsafe) override final public func setupLayout()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class LiveEventsViewSmall : UIKit.UIView, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) final public var onDetailTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public let tableView: UIKit.UITableView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc deinit
+}
+final public class EventStatsViewModel {
+  public init(eventStatsViewerLoader: any ClickmeliveiOSSDK.EventStatsViewerLoader)
+  @objc deinit
+}
+extension ClickmeliveiOSSDK.HomePageMenu.HomePageMenuItem : Swift.Equatable {}
+extension ClickmeliveiOSSDK.HomePageMenu.HomePageMenuItem : Swift.Hashable {}
+extension ClickmeliveiOSSDK.HomePageMenu.HomePageMenuItem : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.Size : Swift.Equatable {}
+extension ClickmeliveiOSSDK.Size : Swift.Hashable {}
+extension ClickmeliveiOSSDK.Size : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.Size : Swift.Sendable {}
+extension ClickmeliveiOSSDK.DiscoverViewMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.DiscoverViewMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.EventResponseMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.EventResponseMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.AppEnvironment.Environment : Swift.Equatable {}
+extension ClickmeliveiOSSDK.AppEnvironment.Environment : Swift.Hashable {}
+extension ClickmeliveiOSSDK.Message.MessageType : Swift.Equatable {}
+extension ClickmeliveiOSSDK.Message.MessageType : Swift.Hashable {}
+extension ClickmeliveiOSSDK.Message.MessageType : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.EventFilterSort : Swift.Equatable {}
+extension ClickmeliveiOSSDK.EventFilterSort : Swift.Hashable {}
+extension ClickmeliveiOSSDK.EventFilterSort : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.InterestsEventCountMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.InterestsEventCountMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.HTTPMethod : Swift.Equatable {}
+extension ClickmeliveiOSSDK.HTTPMethod : Swift.Hashable {}
+extension ClickmeliveiOSSDK.HTTPMethod : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.HomePageViewController.HomeAction : Swift.Equatable {}
+extension ClickmeliveiOSSDK.HomePageViewController.HomeAction : Swift.Hashable {}
+extension ClickmeliveiOSSDK.HomePageViewController.HomeAction : Swift.Sendable {}
+extension ClickmeliveiOSSDK.PlayerView.PlayerState : Swift.Equatable {}
+extension ClickmeliveiOSSDK.PlayerView.PlayerState : Swift.Hashable {}
+extension ClickmeliveiOSSDK.SuccessMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.SuccessMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.FavoritesMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.FavoritesMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.RawFavoritesMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.RawFavoritesMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.AddFavoritesMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.AddFavoritesMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.LiveBadgeCountMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.LiveBadgeCountMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.Product.Variant.VariantType : Swift.Equatable {}
+extension ClickmeliveiOSSDK.Product.Variant.VariantType : Swift.Hashable {}
+extension ClickmeliveiOSSDK.Product.Variant.VariantType : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.Product.Variant.VariantType : Swift.Sendable {}
+extension ClickmeliveiOSSDK.Event.EventStatus : Swift.Equatable {}
+extension ClickmeliveiOSSDK.Event.EventStatus : Swift.Hashable {}
+extension ClickmeliveiOSSDK.Event.EventType : Swift.Equatable {}
+extension ClickmeliveiOSSDK.Event.EventType : Swift.Hashable {}
+extension ClickmeliveiOSSDK.Event.EventType : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.Event.AuctionStatus : Swift.Equatable {}
+extension ClickmeliveiOSSDK.Event.AuctionStatus : Swift.Hashable {}
+extension ClickmeliveiOSSDK.Event.AuctionStatus : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.LiveMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.LiveMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.DiscoverViewType : Swift.Equatable {}
+extension ClickmeliveiOSSDK.DiscoverViewType : Swift.Hashable {}
+extension ClickmeliveiOSSDK.DiscoverViewType : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.StreamTypes : Swift.Equatable {}
+extension ClickmeliveiOSSDK.StreamTypes : Swift.Hashable {}
+extension ClickmeliveiOSSDK.StreamTypes : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.DiscoverItemsMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.DiscoverItemsMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.InterestsMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.InterestsMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.EventMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.EventMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.User.UserType : Swift.Equatable {}
+extension ClickmeliveiOSSDK.User.UserType : Swift.Hashable {}
+extension ClickmeliveiOSSDK.User.UserType : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.EventStatType : Swift.Equatable {}
+extension ClickmeliveiOSSDK.EventStatType : Swift.Hashable {}
+extension ClickmeliveiOSSDK.EventStatType : Swift.RawRepresentable {}
+extension ClickmeliveiOSSDK.EventStatType : Swift.Sendable {}
+extension ClickmeliveiOSSDK.ProductResponseMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.ProductResponseMapper.Error : Swift.Hashable {}
+extension ClickmeliveiOSSDK.EventProductCellType : Swift.Equatable {}
+extension ClickmeliveiOSSDK.EventProductCellType : Swift.Hashable {}
+extension ClickmeliveiOSSDK.AgreementMapper.Error : Swift.Equatable {}
+extension ClickmeliveiOSSDK.AgreementMapper.Error : Swift.Hashable {}

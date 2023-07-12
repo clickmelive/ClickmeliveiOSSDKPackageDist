@@ -1,0 +1,3950 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PIPShadow",
+        "printedName": "PIPShadow",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPShadowV5colorSo7UIColorCvp",
+            "mangledName": "$s6PIPKit9PIPShadowV5colorSo7UIColorCvp",
+            "moduleName": "PIPKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPShadowV5colorSo7UIColorCvg",
+                "mangledName": "$s6PIPKit9PIPShadowV5colorSo7UIColorCvg",
+                "moduleName": "PIPKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "opacity",
+            "printedName": "opacity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPShadowV7opacitySfvp",
+            "mangledName": "$s6PIPKit9PIPShadowV7opacitySfvp",
+            "moduleName": "PIPKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPShadowV7opacitySfvg",
+                "mangledName": "$s6PIPKit9PIPShadowV7opacitySfvg",
+                "moduleName": "PIPKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "offset",
+            "printedName": "offset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPShadowV6offsetSo6CGSizeVvp",
+            "mangledName": "$s6PIPKit9PIPShadowV6offsetSo6CGSizeVvp",
+            "moduleName": "PIPKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPShadowV6offsetSo6CGSizeVvg",
+                "mangledName": "$s6PIPKit9PIPShadowV6offsetSo6CGSizeVvg",
+                "moduleName": "PIPKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "radius",
+            "printedName": "radius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPShadowV6radius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6PIPKit9PIPShadowV6radius12CoreGraphics7CGFloatVvp",
+            "moduleName": "PIPKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPShadowV6radius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6PIPKit9PIPShadowV6radius12CoreGraphics7CGFloatVvg",
+                "moduleName": "PIPKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(color:opacity:offset:radius:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PIPShadow",
+                "printedName": "PIPKit.PIPShadow",
+                "usr": "s:6PIPKit9PIPShadowV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6PIPKit9PIPShadowV5color7opacity6offset6radiusACSo7UIColorC_SfSo6CGSizeV14CoreFoundation7CGFloatVtcfc",
+            "mangledName": "$s6PIPKit9PIPShadowV5color7opacity6offset6radiusACSo7UIColorC_SfSo6CGSizeV12CoreGraphics7CGFloatVtcfc",
+            "moduleName": "PIPKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6PIPKit9PIPShadowV",
+        "mangledName": "$s6PIPKit9PIPShadowV",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PIPCorner",
+        "printedName": "PIPCorner",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "radius",
+            "printedName": "radius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPCornerV6radius14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6PIPKit9PIPCornerV6radius12CoreGraphics7CGFloatVvp",
+            "moduleName": "PIPKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPCornerV6radius14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6PIPKit9PIPCornerV6radius12CoreGraphics7CGFloatVvg",
+                "moduleName": "PIPKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "curve",
+            "printedName": "curve",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuartzCore.CALayerCornerCurve?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CALayerCornerCurve",
+                    "printedName": "QuartzCore.CALayerCornerCurve",
+                    "usr": "c:@T@CALayerCornerCurve"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPCornerV5curveSo18CALayerCornerCurveaSgvp",
+            "mangledName": "$s6PIPKit9PIPCornerV5curveSo18CALayerCornerCurveaSgvp",
+            "moduleName": "PIPKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QuartzCore.CALayerCornerCurve?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CALayerCornerCurve",
+                        "printedName": "QuartzCore.CALayerCornerCurve",
+                        "usr": "c:@T@CALayerCornerCurve"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPCornerV5curveSo18CALayerCornerCurveaSgvg",
+                "mangledName": "$s6PIPKit9PIPCornerV5curveSo18CALayerCornerCurveaSgvg",
+                "moduleName": "PIPKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(radius:curve:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PIPCorner",
+                "printedName": "PIPKit.PIPCorner",
+                "usr": "s:6PIPKit9PIPCornerV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuartzCore.CALayerCornerCurve?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CALayerCornerCurve",
+                    "printedName": "QuartzCore.CALayerCornerCurve",
+                    "usr": "c:@T@CALayerCornerCurve"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6PIPKit9PIPCornerV6radius5curveAC14CoreFoundation7CGFloatV_So18CALayerCornerCurveaSgtcfc",
+            "mangledName": "$s6PIPKit9PIPCornerV6radius5curveAC12CoreGraphics7CGFloatV_So18CALayerCornerCurveaSgtcfc",
+            "moduleName": "PIPKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6PIPKit9PIPCornerV",
+        "mangledName": "$s6PIPKit9PIPCornerV",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PIPState",
+        "printedName": "PIPState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pip",
+            "printedName": "pip",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.PIPState.Type) -> PIPKit.PIPState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPState",
+                    "printedName": "PIPKit.PIPState",
+                    "usr": "s:6PIPKit8PIPStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.PIPState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPState",
+                        "printedName": "PIPKit.PIPState",
+                        "usr": "s:6PIPKit8PIPStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit8PIPStateO3pipyA2CmF",
+            "mangledName": "$s6PIPKit8PIPStateO3pipyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Var",
+            "name": "full",
+            "printedName": "full",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.PIPState.Type) -> PIPKit.PIPState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPState",
+                    "printedName": "PIPKit.PIPState",
+                    "usr": "s:6PIPKit8PIPStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.PIPState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPState",
+                        "printedName": "PIPKit.PIPState",
+                        "usr": "s:6PIPKit8PIPStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit8PIPStateO4fullyA2CmF",
+            "mangledName": "$s6PIPKit8PIPStateO4fullyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PIPState",
+                "printedName": "PIPKit.PIPState",
+                "usr": "s:6PIPKit8PIPStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PIPState",
+                "printedName": "PIPKit.PIPState",
+                "usr": "s:6PIPKit8PIPStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit8PIPStateO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s6PIPKit8PIPStateO2eeoiySbAC_ACtFZ",
+            "moduleName": "PIPKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit8PIPStateO9hashValueSivp",
+            "mangledName": "$s6PIPKit8PIPStateO9hashValueSivp",
+            "moduleName": "PIPKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit8PIPStateO9hashValueSivg",
+                "mangledName": "$s6PIPKit8PIPStateO9hashValueSivg",
+                "moduleName": "PIPKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit8PIPStateO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s6PIPKit8PIPStateO4hash4intoys6HasherVz_tF",
+            "moduleName": "PIPKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6PIPKit8PIPStateO",
+        "mangledName": "$s6PIPKit8PIPStateO",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PIPPosition",
+        "printedName": "PIPPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "topLeft",
+            "printedName": "topLeft",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.PIPPosition.Type) -> PIPKit.PIPPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPPosition",
+                    "printedName": "PIPKit.PIPPosition",
+                    "usr": "s:6PIPKit11PIPPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.PIPPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPPosition",
+                        "printedName": "PIPKit.PIPPosition",
+                        "usr": "s:6PIPKit11PIPPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit11PIPPositionO7topLeftyA2CmF",
+            "mangledName": "$s6PIPKit11PIPPositionO7topLeftyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Var",
+            "name": "middleLeft",
+            "printedName": "middleLeft",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.PIPPosition.Type) -> PIPKit.PIPPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPPosition",
+                    "printedName": "PIPKit.PIPPosition",
+                    "usr": "s:6PIPKit11PIPPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.PIPPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPPosition",
+                        "printedName": "PIPKit.PIPPosition",
+                        "usr": "s:6PIPKit11PIPPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit11PIPPositionO10middleLeftyA2CmF",
+            "mangledName": "$s6PIPKit11PIPPositionO10middleLeftyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Var",
+            "name": "bottomLeft",
+            "printedName": "bottomLeft",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.PIPPosition.Type) -> PIPKit.PIPPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPPosition",
+                    "printedName": "PIPKit.PIPPosition",
+                    "usr": "s:6PIPKit11PIPPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.PIPPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPPosition",
+                        "printedName": "PIPKit.PIPPosition",
+                        "usr": "s:6PIPKit11PIPPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit11PIPPositionO10bottomLeftyA2CmF",
+            "mangledName": "$s6PIPKit11PIPPositionO10bottomLeftyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Var",
+            "name": "topRight",
+            "printedName": "topRight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.PIPPosition.Type) -> PIPKit.PIPPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPPosition",
+                    "printedName": "PIPKit.PIPPosition",
+                    "usr": "s:6PIPKit11PIPPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.PIPPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPPosition",
+                        "printedName": "PIPKit.PIPPosition",
+                        "usr": "s:6PIPKit11PIPPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit11PIPPositionO8topRightyA2CmF",
+            "mangledName": "$s6PIPKit11PIPPositionO8topRightyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Var",
+            "name": "middleRight",
+            "printedName": "middleRight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.PIPPosition.Type) -> PIPKit.PIPPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPPosition",
+                    "printedName": "PIPKit.PIPPosition",
+                    "usr": "s:6PIPKit11PIPPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.PIPPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPPosition",
+                        "printedName": "PIPKit.PIPPosition",
+                        "usr": "s:6PIPKit11PIPPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit11PIPPositionO11middleRightyA2CmF",
+            "mangledName": "$s6PIPKit11PIPPositionO11middleRightyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Var",
+            "name": "bottomRight",
+            "printedName": "bottomRight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.PIPPosition.Type) -> PIPKit.PIPPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPPosition",
+                    "printedName": "PIPKit.PIPPosition",
+                    "usr": "s:6PIPKit11PIPPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.PIPPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPPosition",
+                        "printedName": "PIPKit.PIPPosition",
+                        "usr": "s:6PIPKit11PIPPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit11PIPPositionO11bottomRightyA2CmF",
+            "mangledName": "$s6PIPKit11PIPPositionO11bottomRightyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PIPPosition",
+                "printedName": "PIPKit.PIPPosition",
+                "usr": "s:6PIPKit11PIPPositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PIPPosition",
+                "printedName": "PIPKit.PIPPosition",
+                "usr": "s:6PIPKit11PIPPositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit11PIPPositionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s6PIPKit11PIPPositionO2eeoiySbAC_ACtFZ",
+            "moduleName": "PIPKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit11PIPPositionO9hashValueSivp",
+            "mangledName": "$s6PIPKit11PIPPositionO9hashValueSivp",
+            "moduleName": "PIPKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit11PIPPositionO9hashValueSivg",
+                "mangledName": "$s6PIPKit11PIPPositionO9hashValueSivg",
+                "moduleName": "PIPKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit11PIPPositionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s6PIPKit11PIPPositionO4hash4intoys6HasherVz_tF",
+            "moduleName": "PIPKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6PIPKit11PIPPositionO",
+        "mangledName": "$s6PIPKit11PIPPositionO",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PIPKit",
+        "printedName": "PIPKit",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isActive",
+            "printedName": "isActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKitAAC8isActiveSbvpZ",
+            "mangledName": "$s6PIPKitAAC8isActiveSbvpZ",
+            "moduleName": "PIPKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKitAAC8isActiveSbvgZ",
+                "mangledName": "$s6PIPKitAAC8isActiveSbvgZ",
+                "moduleName": "PIPKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isPIP",
+            "printedName": "isPIP",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKitAAC5isPIPSbvpZ",
+            "mangledName": "$s6PIPKitAAC5isPIPSbvpZ",
+            "moduleName": "PIPKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKitAAC5isPIPSbvgZ",
+                "mangledName": "$s6PIPKitAAC5isPIPSbvgZ",
+                "moduleName": "PIPKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "visibleViewController",
+            "printedName": "visibleViewController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(UIKit.UIViewController & PIPKit.PIPUsable)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "UIKit.UIViewController & PIPKit.PIPUsable"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKitAAC21visibleViewControllerAA9PIPUsable_So06UIViewD0CXcSgvpZ",
+            "mangledName": "$s6PIPKitAAC21visibleViewControllerAA9PIPUsable_So06UIViewD0CXcSgvpZ",
+            "moduleName": "PIPKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(UIKit.UIViewController & PIPKit.PIPUsable)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "UIKit.UIViewController & PIPKit.PIPUsable"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKitAAC21visibleViewControllerAA9PIPUsable_So06UIViewD0CXcSgvgZ",
+                "mangledName": "$s6PIPKitAAC21visibleViewControllerAA9PIPUsable_So06UIViewD0CXcSgvgZ",
+                "moduleName": "PIPKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(with:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "UIKit.UIViewController & PIPKit.PIPUsable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKitAAC4show4with10completionyAA9PIPUsable_So16UIViewControllerCXc_yycSgtFZ",
+            "mangledName": "$s6PIPKitAAC4show4with10completionyAA9PIPUsable_So16UIViewControllerCXc_yycSgtFZ",
+            "moduleName": "PIPKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismiss",
+            "printedName": "dismiss(animated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKitAAC7dismiss8animated10completionySb_yycSgtFZ",
+            "mangledName": "$s6PIPKitAAC7dismiss8animated10completionySb_yycSgtFZ",
+            "moduleName": "PIPKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isAVPIPKitSupported",
+            "printedName": "isAVPIPKitSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKitAAC19isAVPIPKitSupportedSbvpZ",
+            "mangledName": "$s6PIPKitAAC19isAVPIPKitSupportedSbvpZ",
+            "moduleName": "PIPKit",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKitAAC19isAVPIPKitSupportedSbvgZ",
+                "mangledName": "$s6PIPKitAAC19isAVPIPKitSupportedSbvgZ",
+                "moduleName": "PIPKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6PIPKitAAC",
+        "mangledName": "$s6PIPKitAAC",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AVPIPKitRenderPolicy",
+        "printedName": "AVPIPKitRenderPolicy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "once",
+            "printedName": "once",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.AVPIPKitRenderPolicy.Type) -> PIPKit.AVPIPKitRenderPolicy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPIPKitRenderPolicy",
+                    "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                    "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.AVPIPKitRenderPolicy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPIPKitRenderPolicy",
+                        "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                        "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit20AVPIPKitRenderPolicyO4onceyA2CmF",
+            "mangledName": "$s6PIPKit20AVPIPKitRenderPolicyO4onceyA2CmF",
+            "moduleName": "PIPKit"
+          },
+          {
+            "kind": "Var",
+            "name": "preferredFramesPerSecond",
+            "printedName": "preferredFramesPerSecond",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PIPKit.AVPIPKitRenderPolicy.Type) -> (Swift.Int) -> PIPKit.AVPIPKitRenderPolicy",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> PIPKit.AVPIPKitRenderPolicy",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPIPKitRenderPolicy",
+                        "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                        "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PIPKit.AVPIPKitRenderPolicy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPIPKitRenderPolicy",
+                        "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                        "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6PIPKit20AVPIPKitRenderPolicyO24preferredFramesPerSecondyACSicACmF",
+            "mangledName": "$s6PIPKit20AVPIPKitRenderPolicyO24preferredFramesPerSecondyACSicACmF",
+            "moduleName": "PIPKit"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6PIPKit20AVPIPKitRenderPolicyO",
+        "mangledName": "$s6PIPKit20AVPIPKitRenderPolicyO",
+        "moduleName": "PIPKit",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AVPIPKitUsable",
+        "printedName": "AVPIPKitUsable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "renderer",
+            "printedName": "renderer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVPIPKitRenderer",
+                "printedName": "PIPKit.AVPIPKitRenderer",
+                "usr": "s:6PIPKit16AVPIPKitRendererP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit14AVPIPKitUsableP8rendererAA0B8Renderer_pvp",
+            "mangledName": "$s6PIPKit14AVPIPKitUsableP8rendererAA0B8Renderer_pvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPIPKitRenderer",
+                    "printedName": "PIPKit.AVPIPKitRenderer",
+                    "usr": "s:6PIPKit16AVPIPKitRendererP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit14AVPIPKitUsableP8rendererAA0B8Renderer_pvg",
+                "mangledName": "$s6PIPKit14AVPIPKitUsableP8rendererAA0B8Renderer_pvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startPictureInPicture",
+            "printedName": "startPictureInPicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit14AVPIPKitUsableP014startPictureInE0yyF",
+            "mangledName": "$s6PIPKit14AVPIPKitUsableP014startPictureInE0yyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitUsable>",
+            "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitUsable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPictureInPicture",
+            "printedName": "stopPictureInPicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit14AVPIPKitUsableP013stopPictureInE0yyF",
+            "mangledName": "$s6PIPKit14AVPIPKitUsableP013stopPictureInE0yyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitUsable>",
+            "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitUsable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isAVKitPIPSupported",
+            "printedName": "isAVKitPIPSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit14AVPIPKitUsablePAAE19isAVKitPIPSupportedSbvp",
+            "mangledName": "$s6PIPKit14AVPIPKitUsablePAAE19isAVKitPIPSupportedSbvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit14AVPIPKitUsablePAAE19isAVKitPIPSupportedSbvg",
+                "mangledName": "$s6PIPKit14AVPIPKitUsablePAAE19isAVKitPIPSupportedSbvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6PIPKit14AVPIPKitUsableP",
+        "mangledName": "$s6PIPKit14AVPIPKitUsableP",
+        "moduleName": "PIPKit",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "QuartzCore",
+        "printedName": "QuartzCore",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AVPIPKitRenderer",
+        "printedName": "AVPIPKitRenderer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "policy",
+            "printedName": "policy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVPIPKitRenderPolicy",
+                "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPKitRendererP6policyAA0B12RenderPolicyOvp",
+            "mangledName": "$s6PIPKit16AVPIPKitRendererP6policyAA0B12RenderPolicyOvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPIPKitRenderPolicy",
+                    "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                    "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPKitRendererP6policyAA0B12RenderPolicyOvg",
+                "mangledName": "$s6PIPKit16AVPIPKitRendererP6policyAA0B12RenderPolicyOvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitRenderer>",
+                "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitRenderer>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderPublisher",
+            "printedName": "renderPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<UIKit.UIImage, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPKitRendererP15renderPublisher7Combine03AnyE0VySo7UIImageCs5NeverOGvp",
+            "mangledName": "$s6PIPKit16AVPIPKitRendererP15renderPublisher7Combine03AnyE0VySo7UIImageCs5NeverOGvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<UIKit.UIImage, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPKitRendererP15renderPublisher7Combine03AnyE0VySo7UIImageCs5NeverOGvg",
+                "mangledName": "$s6PIPKit16AVPIPKitRendererP15renderPublisher7Combine03AnyE0VySo7UIImageCs5NeverOGvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitRenderer>",
+                "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitRenderer>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPKitRendererP5startyyF",
+            "mangledName": "$s6PIPKit16AVPIPKitRendererP5startyyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitRenderer>",
+            "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitRenderer>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPKitRendererP4stopyyF",
+            "mangledName": "$s6PIPKit16AVPIPKitRendererP4stopyyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitRenderer>",
+            "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitRenderer>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "exit",
+            "printedName": "exit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPKitRendererP4exityyF",
+            "mangledName": "$s6PIPKit16AVPIPKitRendererP4exityyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPKitRenderer>",
+            "sugared_genericSig": "<Self where Self : PIPKit.AVPIPKitRenderer>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6PIPKit16AVPIPKitRendererP",
+        "mangledName": "$s6PIPKit16AVPIPKitRendererP",
+        "moduleName": "PIPKit",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AVPIPUIKitUsable",
+        "printedName": "AVPIPUIKitUsable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pipTargetView",
+            "printedName": "pipTargetView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsableP13pipTargetViewSo6UIViewCvp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsableP13pipTargetViewSo6UIViewCvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsableP13pipTargetViewSo6UIViewCvg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsableP13pipTargetViewSo6UIViewCvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.AVPIPUIKitUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderPolicy",
+            "printedName": "renderPolicy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVPIPKitRenderPolicy",
+                "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsableP12renderPolicyAA014AVPIPKitRenderE0Ovp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsableP12renderPolicyAA014AVPIPKitRenderE0Ovp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPIPKitRenderPolicy",
+                    "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                    "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsableP12renderPolicyAA014AVPIPKitRenderE0Ovg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsableP12renderPolicyAA014AVPIPKitRenderE0Ovg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.AVPIPUIKitUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitPublisher",
+            "printedName": "exitPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsableP13exitPublisher7Combine03AnyE0Vyyts5NeverOGvp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsableP13exitPublisher7Combine03AnyE0Vyyts5NeverOGvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<(), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsableP13exitPublisher7Combine03AnyE0Vyyts5NeverOGvg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsableP13exitPublisher7Combine03AnyE0Vyyts5NeverOGvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.AVPIPUIKitUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderPolicy",
+            "printedName": "renderPolicy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVPIPKitRenderPolicy",
+                "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAAE12renderPolicyAA014AVPIPKitRenderE0Ovp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAAE12renderPolicyAA014AVPIPKitRenderE0Ovp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPIPKitRenderPolicy",
+                    "printedName": "PIPKit.AVPIPKitRenderPolicy",
+                    "usr": "s:6PIPKit20AVPIPKitRenderPolicyO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsablePAAE12renderPolicyAA014AVPIPKitRenderE0Ovg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAAE12renderPolicyAA014AVPIPKitRenderE0Ovg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.AVPIPUIKitUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipTargetView",
+            "printedName": "pipTargetView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE13pipTargetViewSo0D0Cvp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE13pipTargetViewSo0D0Cvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE13pipTargetViewSo0D0Cvg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE13pipTargetViewSo0D0Cvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.AVPIPUIKitUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderer",
+            "printedName": "renderer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVPIPKitRenderer",
+                "printedName": "PIPKit.AVPIPKitRenderer",
+                "usr": "s:6PIPKit16AVPIPKitRendererP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE8rendererAA16AVPIPKitRenderer_pvp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE8rendererAA16AVPIPKitRenderer_pvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPIPKitRenderer",
+                    "printedName": "PIPKit.AVPIPKitRenderer",
+                    "usr": "s:6PIPKit16AVPIPKitRendererP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE8rendererAA16AVPIPKitRenderer_pvg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE8rendererAA16AVPIPKitRenderer_pvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.AVPIPUIKitUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitPublisher",
+            "printedName": "exitPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE13exitPublisher7Combine03AnyG0Vyyts5NeverOGvp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE13exitPublisher7Combine03AnyG0Vyyts5NeverOGvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<(), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE13exitPublisher7Combine03AnyG0Vyyts5NeverOGvg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE13exitPublisher7Combine03AnyG0Vyyts5NeverOGvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.AVPIPUIKitUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startPictureInPicture",
+            "printedName": "startPictureInPicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE014startPictureInG0yyF",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE014startPictureInG0yyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.AVPIPUIKitUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPictureInPicture",
+            "printedName": "stopPictureInPicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE013stopPictureInG0yyF",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE013stopPictureInG0yyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.AVPIPUIKitUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderPictureInPicture",
+            "printedName": "renderPictureInPicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE015renderPictureInG0yyF",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo16UIViewControllerCRbzrlE015renderPictureInG0yyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.AVPIPUIKitUsable>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "pipTargetView",
+            "printedName": "pipTargetView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE13pipTargetViewAEvp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE13pipTargetViewAEvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE13pipTargetViewAEvg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE13pipTargetViewAEvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : UIKit.UIView, Self : PIPKit.AVPIPUIKitUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderer",
+            "printedName": "renderer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVPIPKitRenderer",
+                "printedName": "PIPKit.AVPIPKitRenderer",
+                "usr": "s:6PIPKit16AVPIPKitRendererP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE8rendererAA16AVPIPKitRenderer_pvp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE8rendererAA16AVPIPKitRenderer_pvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPIPKitRenderer",
+                    "printedName": "PIPKit.AVPIPKitRenderer",
+                    "usr": "s:6PIPKit16AVPIPKitRendererP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE8rendererAA16AVPIPKitRenderer_pvg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE8rendererAA16AVPIPKitRenderer_pvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : UIKit.UIView, Self : PIPKit.AVPIPUIKitUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitPublisher",
+            "printedName": "exitPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE13exitPublisher7Combine03AnyF0Vyyts5NeverOGvp",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE13exitPublisher7Combine03AnyF0Vyyts5NeverOGvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<(), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE13exitPublisher7Combine03AnyF0Vyyts5NeverOGvg",
+                "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE13exitPublisher7Combine03AnyF0Vyyts5NeverOGvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+                "sugared_genericSig": "<Self where Self : UIKit.UIView, Self : PIPKit.AVPIPUIKitUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startPictureInPicture",
+            "printedName": "startPictureInPicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE014startPictureInF0yyF",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE014startPictureInF0yyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIView, Self : PIPKit.AVPIPUIKitUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPictureInPicture",
+            "printedName": "stopPictureInPicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE013stopPictureInF0yyF",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE013stopPictureInF0yyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIView, Self : PIPKit.AVPIPUIKitUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderPictureInPicture",
+            "printedName": "renderPictureInPicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE015renderPictureInF0yyF",
+            "mangledName": "$s6PIPKit16AVPIPUIKitUsablePAASo6UIViewCRbzrlE015renderPictureInF0yyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : PIPKit.AVPIPUIKitUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIView, Self : PIPKit.AVPIPUIKitUsable>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6PIPKit16AVPIPUIKitUsableP",
+        "mangledName": "$s6PIPKit16AVPIPUIKitUsableP",
+        "moduleName": "PIPKit",
+        "genericSig": "<τ_0_0 : PIPKit.AVPIPKitUsable>",
+        "sugared_genericSig": "<Self : PIPKit.AVPIPKitUsable>",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AVPIPKitUsable",
+            "printedName": "AVPIPKitUsable",
+            "usr": "s:6PIPKit14AVPIPKitUsableP",
+            "mangledName": "$s6PIPKit14AVPIPKitUsableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PIPKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PIPUsable",
+        "printedName": "PIPUsable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "initialState",
+            "printedName": "initialState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PIPState",
+                "printedName": "PIPKit.PIPState",
+                "usr": "s:6PIPKit8PIPStateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsableP12initialStateAA8PIPStateOvp",
+            "mangledName": "$s6PIPKit9PIPUsableP12initialStateAA8PIPStateOvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPState",
+                    "printedName": "PIPKit.PIPState",
+                    "usr": "s:6PIPKit8PIPStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsableP12initialStateAA8PIPStateOvg",
+                "mangledName": "$s6PIPKit9PIPUsableP12initialStateAA8PIPStateOvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "initialPosition",
+            "printedName": "initialPosition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PIPPosition",
+                "printedName": "PIPKit.PIPPosition",
+                "usr": "s:6PIPKit11PIPPositionO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsableP15initialPositionAA11PIPPositionOvp",
+            "mangledName": "$s6PIPKit9PIPUsableP15initialPositionAA11PIPPositionOvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPPosition",
+                    "printedName": "PIPKit.PIPPosition",
+                    "usr": "s:6PIPKit11PIPPositionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsableP15initialPositionAA11PIPPositionOvg",
+                "mangledName": "$s6PIPKit9PIPUsableP15initialPositionAA11PIPPositionOvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "insetsPIPFromSafeArea",
+            "printedName": "insetsPIPFromSafeArea",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsableP21insetsPIPFromSafeAreaSbvp",
+            "mangledName": "$s6PIPKit9PIPUsableP21insetsPIPFromSafeAreaSbvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsableP21insetsPIPFromSafeAreaSbvg",
+                "mangledName": "$s6PIPKit9PIPUsableP21insetsPIPFromSafeAreaSbvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipEdgeInsets",
+            "printedName": "pipEdgeInsets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsableP13pipEdgeInsetsSo06UIEdgeE0Vvp",
+            "mangledName": "$s6PIPKit9PIPUsableP13pipEdgeInsetsSo06UIEdgeE0Vvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsableP13pipEdgeInsetsSo06UIEdgeE0Vvg",
+                "mangledName": "$s6PIPKit9PIPUsableP13pipEdgeInsetsSo06UIEdgeE0Vvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipSize",
+            "printedName": "pipSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsableP7pipSizeSo6CGSizeVvp",
+            "mangledName": "$s6PIPKit9PIPUsableP7pipSizeSo6CGSizeVvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsableP7pipSizeSo6CGSizeVvg",
+                "mangledName": "$s6PIPKit9PIPUsableP7pipSizeSo6CGSizeVvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipShadow",
+            "printedName": "pipShadow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PIPKit.PIPShadow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPShadow",
+                    "printedName": "PIPKit.PIPShadow",
+                    "usr": "s:6PIPKit9PIPShadowV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsableP9pipShadowAA9PIPShadowVSgvp",
+            "mangledName": "$s6PIPKit9PIPUsableP9pipShadowAA9PIPShadowVSgvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PIPKit.PIPShadow?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPShadow",
+                        "printedName": "PIPKit.PIPShadow",
+                        "usr": "s:6PIPKit9PIPShadowV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsableP9pipShadowAA9PIPShadowVSgvg",
+                "mangledName": "$s6PIPKit9PIPUsableP9pipShadowAA9PIPShadowVSgvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipCorner",
+            "printedName": "pipCorner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PIPKit.PIPCorner?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPCorner",
+                    "printedName": "PIPKit.PIPCorner",
+                    "usr": "s:6PIPKit9PIPCornerV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsableP9pipCornerAA9PIPCornerVSgvp",
+            "mangledName": "$s6PIPKit9PIPUsableP9pipCornerAA9PIPCornerVSgvp",
+            "moduleName": "PIPKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PIPKit.PIPCorner?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPCorner",
+                        "printedName": "PIPKit.PIPCorner",
+                        "usr": "s:6PIPKit9PIPCornerV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsableP9pipCornerAA9PIPCornerVSgvg",
+                "mangledName": "$s6PIPKit9PIPUsableP9pipCornerAA9PIPCornerVSgvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "didChangedState",
+            "printedName": "didChangedState(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PIPState",
+                "printedName": "PIPKit.PIPState",
+                "usr": "s:6PIPKit8PIPStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit9PIPUsableP15didChangedStateyyAA8PIPStateOF",
+            "mangledName": "$s6PIPKit9PIPUsableP15didChangedStateyyAA8PIPStateOF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+            "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didChangePosition",
+            "printedName": "didChangePosition(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PIPPosition",
+                "printedName": "PIPKit.PIPPosition",
+                "usr": "s:6PIPKit11PIPPositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit9PIPUsableP17didChangePositionyyAA11PIPPositionOF",
+            "mangledName": "$s6PIPKit9PIPUsableP17didChangePositionyyAA11PIPPositionOF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+            "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "initialState",
+            "printedName": "initialState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PIPState",
+                "printedName": "PIPKit.PIPState",
+                "usr": "s:6PIPKit8PIPStateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsablePAAE12initialStateAA8PIPStateOvp",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE12initialStateAA8PIPStateOvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPState",
+                    "printedName": "PIPKit.PIPState",
+                    "usr": "s:6PIPKit8PIPStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsablePAAE12initialStateAA8PIPStateOvg",
+                "mangledName": "$s6PIPKit9PIPUsablePAAE12initialStateAA8PIPStateOvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "initialPosition",
+            "printedName": "initialPosition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PIPPosition",
+                "printedName": "PIPKit.PIPPosition",
+                "usr": "s:6PIPKit11PIPPositionO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsablePAAE15initialPositionAA11PIPPositionOvp",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE15initialPositionAA11PIPPositionOvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPPosition",
+                    "printedName": "PIPKit.PIPPosition",
+                    "usr": "s:6PIPKit11PIPPositionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsablePAAE15initialPositionAA11PIPPositionOvg",
+                "mangledName": "$s6PIPKit9PIPUsablePAAE15initialPositionAA11PIPPositionOvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "insetsPIPFromSafeArea",
+            "printedName": "insetsPIPFromSafeArea",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsablePAAE21insetsPIPFromSafeAreaSbvp",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE21insetsPIPFromSafeAreaSbvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsablePAAE21insetsPIPFromSafeAreaSbvg",
+                "mangledName": "$s6PIPKit9PIPUsablePAAE21insetsPIPFromSafeAreaSbvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipEdgeInsets",
+            "printedName": "pipEdgeInsets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsablePAAE13pipEdgeInsetsSo06UIEdgeE0Vvp",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE13pipEdgeInsetsSo06UIEdgeE0Vvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsablePAAE13pipEdgeInsetsSo06UIEdgeE0Vvg",
+                "mangledName": "$s6PIPKit9PIPUsablePAAE13pipEdgeInsetsSo06UIEdgeE0Vvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipSize",
+            "printedName": "pipSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsablePAAE7pipSizeSo6CGSizeVvp",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE7pipSizeSo6CGSizeVvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsablePAAE7pipSizeSo6CGSizeVvg",
+                "mangledName": "$s6PIPKit9PIPUsablePAAE7pipSizeSo6CGSizeVvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipShadow",
+            "printedName": "pipShadow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PIPKit.PIPShadow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPShadow",
+                    "printedName": "PIPKit.PIPShadow",
+                    "usr": "s:6PIPKit9PIPShadowV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsablePAAE9pipShadowAA9PIPShadowVSgvp",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE9pipShadowAA9PIPShadowVSgvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PIPKit.PIPShadow?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPShadow",
+                        "printedName": "PIPKit.PIPShadow",
+                        "usr": "s:6PIPKit9PIPShadowV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsablePAAE9pipShadowAA9PIPShadowVSgvg",
+                "mangledName": "$s6PIPKit9PIPUsablePAAE9pipShadowAA9PIPShadowVSgvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pipCorner",
+            "printedName": "pipCorner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PIPKit.PIPCorner?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PIPCorner",
+                    "printedName": "PIPKit.PIPCorner",
+                    "usr": "s:6PIPKit9PIPCornerV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6PIPKit9PIPUsablePAAE9pipCornerAA9PIPCornerVSgvp",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE9pipCornerAA9PIPCornerVSgvp",
+            "moduleName": "PIPKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PIPKit.PIPCorner?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PIPCorner",
+                        "printedName": "PIPKit.PIPCorner",
+                        "usr": "s:6PIPKit9PIPCornerV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6PIPKit9PIPUsablePAAE9pipCornerAA9PIPCornerVSgvg",
+                "mangledName": "$s6PIPKit9PIPUsablePAAE9pipCornerAA9PIPCornerVSgvg",
+                "moduleName": "PIPKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+                "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "didChangedState",
+            "printedName": "didChangedState(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PIPState",
+                "printedName": "PIPKit.PIPState",
+                "usr": "s:6PIPKit8PIPStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit9PIPUsablePAAE15didChangedStateyyAA8PIPStateOF",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE15didChangedStateyyAA8PIPStateOF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+            "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didChangePosition",
+            "printedName": "didChangePosition(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PIPPosition",
+                "printedName": "PIPKit.PIPPosition",
+                "usr": "s:6PIPKit11PIPPositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit9PIPUsablePAAE17didChangePositionyyAA11PIPPositionOF",
+            "mangledName": "$s6PIPKit9PIPUsablePAAE17didChangePositionyyAA11PIPPositionOF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PIPKit.PIPUsable>",
+            "sugared_genericSig": "<Self where Self : PIPKit.PIPUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNeedsUpdatePIPFrame",
+            "printedName": "setNeedsUpdatePIPFrame()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit9PIPUsablePAASo16UIViewControllerCRbzrlE22setNeedsUpdatePIPFrameyyF",
+            "mangledName": "$s6PIPKit9PIPUsablePAASo16UIViewControllerCRbzrlE22setNeedsUpdatePIPFrameyyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.PIPUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.PIPUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startPIPMode",
+            "printedName": "startPIPMode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit9PIPUsablePAASo16UIViewControllerCRbzrlE12startPIPModeyyF",
+            "mangledName": "$s6PIPKit9PIPUsablePAASo16UIViewControllerCRbzrlE12startPIPModeyyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.PIPUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.PIPUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPIPMode",
+            "printedName": "stopPIPMode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6PIPKit9PIPUsablePAASo16UIViewControllerCRbzrlE11stopPIPModeyyF",
+            "mangledName": "$s6PIPKit9PIPUsablePAASo16UIViewControllerCRbzrlE11stopPIPModeyyF",
+            "moduleName": "PIPKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIViewController, τ_0_0 : PIPKit.PIPUsable>",
+            "sugared_genericSig": "<Self where Self : UIKit.UIViewController, Self : PIPKit.PIPUsable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6PIPKit9PIPUsableP",
+        "mangledName": "$s6PIPKit9PIPUsableP",
+        "moduleName": "PIPKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 1333,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 1547,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 3487,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4257,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4396,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 5353,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 5403,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 5435,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 6020,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 6070,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 6102,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 6926,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 7077,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 7241,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 7349,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 8536,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 8695,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 8784,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 8949,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKitEventDispatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 9115,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1637,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKit.swift",
+      "kind": "FloatLiteral",
+      "offset": 2158,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKit.swift",
+      "kind": "FloatLiteral",
+      "offset": 2254,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPKit.swift",
+      "kind": "FloatLiteral",
+      "offset": 2326,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitUsable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 263,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/Extension\/UIView+Associated.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 17,
+      "value": "\"avUIKitRenderer\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/Extension\/UIView+Associated.swift",
+      "kind": "StringLiteral",
+      "offset": 263,
+      "length": 20,
+      "value": "\"PIPVideoController\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 447,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 905,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 1068,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2750,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 2937,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3841,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4277,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4316,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4397,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 4560,
+      "length": 22,
+      "value": "\"SampleBuffer is null\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5490,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5549,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1252,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1460,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2465,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3098,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoController.swift",
+      "kind": "StringLiteral",
+      "offset": 3243,
+      "length": 17,
+      "value": "\"not support PIP\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3877,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoController.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 23,
+      "value": "\"PIPKit.AVPIPKitVideoController\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5316,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/Extension\/UIViewController+Associated.swift",
+      "kind": "StringLiteral",
+      "offset": 228,
+      "length": 20,
+      "value": "\"pipEventDispatcher\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/Extension\/UIViewController+Associated.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 17,
+      "value": "\"avUIKitRenderer\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/Extension\/UIViewController+Associated.swift",
+      "kind": "StringLiteral",
+      "offset": 344,
+      "length": 20,
+      "value": "\"PIPVideoController\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 803,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1302,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1618,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1674,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/AVPIPKit\/AVPIPKitRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1910,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 621,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 691,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 701,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 713,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 724,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 777,
+      "length": 5,
+      "value": "200.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 793,
+      "length": 5,
+      "value": "200.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 801,
+      "length": 3,
+      "value": "9.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 808,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 889,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 916,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 927,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 939,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1051,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1128,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 1803,
+      "length": 4,
+      "value": "0.24"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1816,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 1907,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 1976,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/PIPKit\/PIPKit\/Classes\/PIPKit\/PIPUsable.swift",
+      "kind": "FloatLiteral",
+      "offset": 1984,
+      "length": 3,
+      "value": "0.1"
+    }
+  ]
+}
