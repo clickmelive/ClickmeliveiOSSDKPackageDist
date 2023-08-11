@@ -460,6 +460,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK22DiscoverViewController")
 
 
 
+
 @interface DiscoverViewController (SWIFT_EXTENSION(ClickmeliveiOSSDK)) <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didEndDisplayingCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -941,6 +942,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK9StockView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
+
 
 
 

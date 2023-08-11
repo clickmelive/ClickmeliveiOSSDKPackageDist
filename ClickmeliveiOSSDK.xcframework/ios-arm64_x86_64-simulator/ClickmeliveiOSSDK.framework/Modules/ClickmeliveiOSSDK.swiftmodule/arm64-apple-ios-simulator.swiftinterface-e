@@ -85,7 +85,7 @@ public struct CMLUser {
   public init(userName: Swift.String, userId: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class CML {
-  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onOpenProductDetail: @escaping (ClickmeliveiOSSDK.Product) -> Swift.Void, onAddToBasket: @escaping (ClickmeliveiOSSDK.Product) -> Swift.Void, onBasketClicked: @escaping () -> Swift.Void)
+  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onProductClick: @escaping (_ productId: Swift.Int, _ sellerId: Swift.String?) -> Swift.Void, onProductAddedToBasket: @escaping (_ productId: Swift.Int, _ sellerId: Swift.String?) -> Swift.Void, onBasketClick: @escaping () -> Swift.Void, onExitButtonClick: @escaping () -> Swift.Void, onLinkGenerationClick: @escaping (_ eventId: Swift.Int) -> Swift.Void, onMerchantClick: @escaping (_ sellerId: Swift.Int?) -> Swift.Void)
   public static func makeCMLNavigationController() -> ClickmeliveiOSSDK.CMLNavigationController
   public static func makeHomePageViewController() -> UIKit.UIViewController
   public static func makeFeedViewController(events: [ClickmeliveiOSSDK.Event], selectedIndexPath: Foundation.IndexPath, rootNavigationController: UIKit.UINavigationController?, disablePip: Swift.Bool = false) -> ClickmeliveiOSSDK.FeedViewController
@@ -388,6 +388,9 @@ final public class ProductViewModel {
   final public var deleteTitle: Swift.String {
     get
   }
+  final public var addToBasketTitle: Swift.String {
+    get
+  }
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class DiscoverView : UIKit.UIView, ClickmeliveiOSSDK.Layoutable {
@@ -494,6 +497,7 @@ extension ClickmeliveiOSSDK.EventFilterViewController : UIKit.UITableViewDelegat
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class EventProductCell : ClickmeliveiOSSDK.ProductCell {
   public enum Constants {
   }
+  @_Concurrency.MainActor(unsafe) final public var onAddToBasket: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) final public let lblIndex: UIKit.UILabel
   @_Concurrency.MainActor(unsafe) override final public func setupViews()
   @_Concurrency.MainActor(unsafe) override final public func setupLayout()
@@ -752,6 +756,7 @@ extension ClickmeliveiOSSDK.Localized {
   @_Concurrency.MainActor(unsafe) @objc override final public func loadView()
 }
 public protocol ImageLoader {
+  func loadImage(to imageView: UIKit.UIImageView, with url: Foundation.URL?, placeholder placeholderImage: Swift.String?)
   func loadImage(to imageView: UIKit.UIImageView, with url: Foundation.URL?)
 }
 final public class FeedViewModel {
@@ -1144,6 +1149,8 @@ public struct Product : Swift.Hashable {
   public let categoryName: Swift.String?
   public let images: [Swift.String]?
   public let productColors: [ClickmeliveiOSSDK.Product.Variant]?
+  public let isVariantable: Swift.Bool?
+  public let sellerId: Swift.String?
   public var selectedVariantId: Swift.Int?
   public var selectedVariantName: Swift.String? {
     get
@@ -1602,10 +1609,11 @@ public struct EventResponse {
 @frozen public enum DiscoverAction {
   case minimizeTapped
   case eventProductsTapped(event: ClickmeliveiOSSDK.Event, bottomSheetHeight: ClickmeliveiOSSDK.BottomSheetHeight)
-  case shareTapped(eventViewModel: ClickmeliveiOSSDK.EventViewModel)
+  case shareTapped(eventId: Swift.Int)
   case feedLoading(isLoading: Swift.Bool)
   case streamEnded
   case liveEventSelected(event: ClickmeliveiOSSDK.Event)
+  case merchantTapped(sellerId: Swift.Int?)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class DiscoverCell : UIKit.UICollectionViewCell {
   @objc deinit
@@ -1754,6 +1762,9 @@ public struct ChatConnectionParameters {
   case closeTapped
   case eventRated(eventId: Swift.Int, rate: Swift.Int)
   case streamEnded
+  case shareTapped(eventId: Swift.Int)
+  case merchantTapped(sellerId: Swift.Int?)
+  case onBasketTapped
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class FeedCell : UIKit.UICollectionViewCell {
   @objc deinit

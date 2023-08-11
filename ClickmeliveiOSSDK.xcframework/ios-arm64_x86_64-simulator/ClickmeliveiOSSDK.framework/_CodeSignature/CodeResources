@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/ClickmeliveiOSSDK-Swift.h</key>
 		<data>
-		fhqUoiOuPfaXTor2EZ86u1Nra/c=
+		gI//l7PGBShbzEKcXR4q/FfbnSc=
 		</data>
 		<key>Headers/ClickmeliveiOSSDK.h</key>
 		<data>
@@ -102,11 +102,11 @@
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		keSwfWtm8QTbi9Zty+fDg3ART8c=
+		or69R2U6x0NRV8AX1n73DomMQu4=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Sin99J+pr6+inZvtg+i9M7QdEQk=
+		akbOCebnK3z7yCYB1uP61J7cas0=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -114,19 +114,19 @@
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Sin99J+pr6+inZvtg+i9M7QdEQk=
+		akbOCebnK3z7yCYB1uP61J7cas0=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ys00ab9wVI4NrGlI74QDn6jiobE=
+		dxK15Tw2DOWLobTa+JyaXTFfhmQ=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		keSwfWtm8QTbi9Zty+fDg3ART8c=
+		or69R2U6x0NRV8AX1n73DomMQu4=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VmXM0jXsMgkwuT/cOTPRs0V/AGI=
+		Vq+3WF35c8uJ2Ulhfs6XjBdoAvc=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -134,11 +134,11 @@
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VmXM0jXsMgkwuT/cOTPRs0V/AGI=
+		Vq+3WF35c8uJ2Ulhfs6XjBdoAvc=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vzhXzhm7OY5c2GJ6V7F9W9jUluQ=
+		iEk//yC6DyjOdDnt4hBzYEyob1M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -235,7 +235,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bU9BO/vGmS8zPtKYhjdOJ8YeiJc=
+			XcUdOB6rUPNGCgCQf23V2Cl4O6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -325,7 +325,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bU9BO/vGmS8zPtKYhjdOJ8YeiJc=
+			XcUdOB6rUPNGCgCQf23V2Cl4O6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -362,7 +362,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tF1mL6nSkjWwxFvjkjDKAdX46ZRs938Xgfbe+0SH34A=
+			GeoRZr2OGe/44XLcjY3UDoJDgAapG858JHCUlchy9Wc=
 			</data>
 		</dict>
 		<key>Headers/ClickmeliveiOSSDK.h</key>
@@ -516,14 +516,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mQtSjYszgX6w7n9pwiwAJsF1tU2udalaysEVu+A5rrc=
+			I5C4P/Zgvv/EMcKc14p6mt+UGQ8wWUDCSG64Bh646gM=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FIT5eBzu6tCP0UokI/bAGyhrG/sfPZIqDHxrbIgCuPU=
+			+jy43dIdJwo/UoiYdn+fj7g1+KPyI591sCntlNWvQFY=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -537,28 +537,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FIT5eBzu6tCP0UokI/bAGyhrG/sfPZIqDHxrbIgCuPU=
+			+jy43dIdJwo/UoiYdn+fj7g1+KPyI591sCntlNWvQFY=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8gTOD6qvo0Hk+XOqmas34do3b1cOVXPEYNMP9phiFKI=
+			SS/V10hsja3CMEuo3QRx+ClgOw2P+4gy1kKafWhsWKQ=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mQtSjYszgX6w7n9pwiwAJsF1tU2udalaysEVu+A5rrc=
+			I5C4P/Zgvv/EMcKc14p6mt+UGQ8wWUDCSG64Bh646gM=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1a/7f7bd9K5LrtWhiZtTubtp4QAKpwMcgPEtb+f0B4s=
+			gQQgdjMym09nRibVM/E9thFcGJbF5lCG8nACXek9sk4=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -572,14 +572,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1a/7f7bd9K5LrtWhiZtTubtp4QAKpwMcgPEtb+f0B4s=
+			gQQgdjMym09nRibVM/E9thFcGJbF5lCG8nACXek9sk4=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0oSR/erDPCKCGfbWfiYKezJAV+TBzafbb3sL7RIG+a8=
+			zJOVyGKoiq8sznS57XuNp91XQSTN+XXnPeZDe3ayf50=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -698,7 +698,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xQCUW2euo7lVH6mwsf4B1pcqgt6jND9pMNH+Dd2fz+I=
+			0tcQoku4DpzTzD0GEm44QgGmb84I8DWeGghyfh+uI84=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -788,7 +788,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xQCUW2euo7lVH6mwsf4B1pcqgt6jND9pMNH+Dd2fz+I=
+			0tcQoku4DpzTzD0GEm44QgGmb84I8DWeGghyfh+uI84=
 			</data>
 			<key>optional</key>
 			<true/>
