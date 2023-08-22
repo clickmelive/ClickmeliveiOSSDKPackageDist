@@ -85,7 +85,7 @@ public struct CMLUser {
   public init(userName: Swift.String, userId: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class CML {
-  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onProductClick: @escaping (_ productId: Swift.Int, _ sellerId: Swift.String?) -> Swift.Void, onProductAddedToBasket: @escaping (_ productId: Swift.Int, _ sellerId: Swift.String?) -> Swift.Void, onBasketClick: @escaping () -> Swift.Void, onExitButtonClick: @escaping () -> Swift.Void, onLinkGenerationClick: @escaping (_ eventId: Swift.Int) -> Swift.Void, onMerchantClick: @escaping (_ sellerId: Swift.Int?) -> Swift.Void)
+  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onProductClick: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?) -> Swift.Void, onProductAddedToBasket: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?) -> Swift.Void, onBasketClick: @escaping () -> Swift.Void, onExitButtonClick: @escaping () -> Swift.Void, onLinkGenerationClick: @escaping (_ eventId: Swift.Int) -> Swift.Void, onMerchantClick: @escaping (_ sellerId: Swift.String?) -> Swift.Void)
   public static func makeCMLNavigationController() -> ClickmeliveiOSSDK.CMLNavigationController
   public static func makeHomePageViewController() -> UIKit.UIViewController
   public static func makeFeedViewController(events: [ClickmeliveiOSSDK.Event], selectedIndexPath: Foundation.IndexPath, rootNavigationController: UIKit.UINavigationController?, disablePip: Swift.Bool = false) -> ClickmeliveiOSSDK.FeedViewController
@@ -149,6 +149,7 @@ public struct UserDTO : Swift.Codable {
   public let followers: Swift.Int?
   public let following: Swift.Int?
   public let isChatPrivate: Swift.Bool?
+  public let externalSdkUserId: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1151,6 +1152,7 @@ public struct Product : Swift.Hashable {
   public let productColors: [ClickmeliveiOSSDK.Product.Variant]?
   public let isVariantable: Swift.Bool?
   public let sellerId: Swift.String?
+  public let externalProductId: Swift.String?
   public var selectedVariantId: Swift.Int?
   public var selectedVariantName: Swift.String? {
     get
@@ -1355,6 +1357,9 @@ final public class EventViewModel {
     get
   }
   final public var sellerId: Swift.Int? {
+    get
+  }
+  final public var externalSdkSellerId: Swift.String? {
     get
   }
   final public var sellerName: Swift.String {
@@ -1613,7 +1618,7 @@ public struct EventResponse {
   case feedLoading(isLoading: Swift.Bool)
   case streamEnded
   case liveEventSelected(event: ClickmeliveiOSSDK.Event)
-  case merchantTapped(sellerId: Swift.Int?)
+  case merchantTapped(sellerId: Swift.String?)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class DiscoverCell : UIKit.UICollectionViewCell {
   @objc deinit
@@ -1763,7 +1768,7 @@ public struct ChatConnectionParameters {
   case eventRated(eventId: Swift.Int, rate: Swift.Int)
   case streamEnded
   case shareTapped(eventId: Swift.Int)
-  case merchantTapped(sellerId: Swift.Int?)
+  case merchantTapped(sellerId: Swift.String?)
   case onBasketTapped
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class FeedCell : UIKit.UICollectionViewCell {
@@ -1883,6 +1888,7 @@ public struct User : Swift.Hashable {
   public let followerCount: Swift.Int
   public let followingCount: Swift.Int
   public let isChatPrivate: Swift.Bool
+  public let externalSdkUserId: Swift.String?
   public enum UserType : Swift.Int, Swift.Encodable {
     case BROADCASTER
     case INFLUENCER
