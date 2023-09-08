@@ -329,6 +329,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK23CMLNavigationController")
 @end
 
 
+
 SWIFT_CLASS("_TtC17ClickmeliveiOSSDK12CMLTextField")
 @interface CMLTextField : UITextField
 - (CGRect)textRectForBounds:(CGRect)bounds SWIFT_WARN_UNUSED_RESULT;
@@ -631,6 +632,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK18FeedViewController")
 
 
 
+
 @class UITextView;
 
 @interface FeedViewController (SWIFT_EXTENSION(ClickmeliveiOSSDK)) <UITextViewDelegate>
@@ -707,6 +709,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK22HomePageViewController")
 - (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)pageViewController viewControllerAfterViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 - (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)pageViewController viewControllerBeforeViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 SWIFT_CLASS("_TtC17ClickmeliveiOSSDK19HorizontalEventCell")
