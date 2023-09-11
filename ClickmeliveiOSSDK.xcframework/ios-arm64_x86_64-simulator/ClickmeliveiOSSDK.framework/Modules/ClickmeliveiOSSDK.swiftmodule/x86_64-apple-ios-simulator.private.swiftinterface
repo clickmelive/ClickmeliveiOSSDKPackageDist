@@ -94,7 +94,7 @@ public protocol SDKPIPFunctions {
   func enterPIPMode()
 }
 @_hasMissingDesignatedInitializers public class CML {
-  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onProductClick: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?) -> Swift.Void, onProductAddedToBasket: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?) -> Swift.Void, onBasketClick: @escaping () -> Swift.Void, onExitButtonClick: @escaping () -> Swift.Void, onLinkGenerationClick: @escaping (_ eventId: Swift.Int, _ eventType: Swift.Int) -> Swift.Void, onMerchantClick: @escaping (_ sellerId: Swift.String?) -> Swift.Void)
+  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onProductClick: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?, _ fromEventId: Swift.Int, _ fromEventType: Swift.Int) -> Swift.Void, onProductAddedToBasket: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?, _ fromEventId: Swift.Int, _ fromEventType: Swift.Int) -> Swift.Void, onBasketClick: @escaping () -> Swift.Void, onExitButtonClick: @escaping () -> Swift.Void, onLinkGenerationClick: @escaping (_ eventId: Swift.Int, _ eventType: Swift.Int) -> Swift.Void, onMerchantClick: @escaping (_ sellerId: Swift.String?) -> Swift.Void)
   public static func start(hostController: UIKit.UIViewController)
   public static func exit()
   public static func handleOnExitButtonClicked()
@@ -402,7 +402,10 @@ final public class ProductViewModel {
   final public var deleteTitle: Swift.String {
     get
   }
-  final public var addToBasketTitle: Swift.String {
+  final public var isVariantable: Swift.Bool {
+    get
+  }
+  final public var productActionButtonTitle: Swift.String {
     get
   }
   @objc deinit
@@ -511,7 +514,7 @@ extension ClickmeliveiOSSDK.EventFilterViewController : UIKit.UITableViewDelegat
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class EventProductCell : ClickmeliveiOSSDK.ProductCell {
   public enum Constants {
   }
-  @_Concurrency.MainActor(unsafe) final public var onAddToBasket: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var onProductActionButtonClicked: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) final public let lblIndex: UIKit.UILabel
   @_Concurrency.MainActor(unsafe) override final public func setupViews()
   @_Concurrency.MainActor(unsafe) override final public func setupLayout()
@@ -2168,7 +2171,6 @@ public enum EventProductCellType {
 }
 @objc @_Concurrency.MainActor(unsafe) final public class EventProductCellController : ObjectiveC.NSObject, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
   @_Concurrency.MainActor(unsafe) final public var onAddToBasket: (() -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) final public var onHasVariant: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) final public var onProductSelected: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) public init(productViewModel: ClickmeliveiOSSDK.ProductViewModel, stockViewModel: ClickmeliveiOSSDK.StockViewModel, imageLoader: any ClickmeliveiOSSDK.ImageLoader, cellType: ClickmeliveiOSSDK.EventProductCellType)
   @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
