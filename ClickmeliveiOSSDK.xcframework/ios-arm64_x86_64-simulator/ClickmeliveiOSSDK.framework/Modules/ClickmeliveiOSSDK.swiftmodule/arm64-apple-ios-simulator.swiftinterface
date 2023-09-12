@@ -94,7 +94,7 @@ public protocol SDKPIPFunctions {
   func enterPIPMode()
 }
 @_hasMissingDesignatedInitializers public class CML {
-  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onProductClick: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?, _ fromEventId: Swift.Int, _ fromEventType: Swift.Int) -> Swift.Void, onProductAddedToBasket: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?, _ fromEventId: Swift.Int, _ fromEventType: Swift.Int) -> Swift.Void, onBasketClick: @escaping () -> Swift.Void, onExitButtonClick: @escaping () -> Swift.Void, onLinkGenerationClick: @escaping (_ eventId: Swift.Int, _ eventType: Swift.Int) -> Swift.Void, onMerchantClick: @escaping (_ sellerId: Swift.String?) -> Swift.Void)
+  public static func configure(environment: ClickmeliveiOSSDK.AppEnvironment.Environment, apiKey: Swift.String, apiSecret: Swift.String, user: ClickmeliveiOSSDK.CMLUser, onProductClick: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?, _ fromEventId: Swift.Int, _ fromEventType: Swift.Int) -> Swift.Void, onProductAddedToBasket: @escaping (_ productId: Swift.String?, _ sellerId: Swift.String?, _ fromEventId: Swift.Int, _ fromEventType: Swift.Int) -> Swift.Void, onBasketClick: @escaping () -> Swift.Void, onExitButtonClick: @escaping () -> Swift.Void, onLinkGenerationClick: @escaping (_ eventId: Swift.Int, _ eventType: Swift.Int) -> Swift.Void, onMerchantClick: @escaping (_ sellerId: Swift.String?, _ eventId: Swift.Int, _ eventType: Swift.Int) -> Swift.Void)
   public static func start(hostController: UIKit.UIViewController)
   public static func exit()
   public static func handleOnExitButtonClicked()
@@ -1640,7 +1640,7 @@ public struct EventResponse {
   case feedLoading(isLoading: Swift.Bool)
   case streamEnded
   case liveEventSelected(event: ClickmeliveiOSSDK.Event)
-  case merchantTapped(sellerId: Swift.String?)
+  case merchantTapped(sellerId: Swift.String?, eventId: Swift.Int, eventType: Swift.Int)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class DiscoverCell : UIKit.UICollectionViewCell {
   @objc deinit
@@ -1790,7 +1790,7 @@ public struct ChatConnectionParameters {
   case eventRated(eventId: Swift.Int, rate: Swift.Int)
   case streamEnded
   case shareTapped(eventId: Swift.Int, eventType: Swift.Int)
-  case merchantTapped(sellerId: Swift.String?)
+  case merchantTapped(sellerId: Swift.String?, eventId: Swift.Int, eventType: Swift.Int)
   case onBasketTapped
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class FeedCell : UIKit.UICollectionViewCell {
