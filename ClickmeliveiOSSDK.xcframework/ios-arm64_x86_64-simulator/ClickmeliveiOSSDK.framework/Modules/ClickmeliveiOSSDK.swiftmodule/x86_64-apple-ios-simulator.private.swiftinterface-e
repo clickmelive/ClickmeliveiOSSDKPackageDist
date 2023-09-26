@@ -1102,17 +1102,17 @@ extension ClickmeliveiOSSDK.FeedViewController : UIKit.UICollectionViewDelegateF
 extension ClickmeliveiOSSDK.FeedViewController {
   @_Concurrency.MainActor(unsafe) final public func updateEventProducts(viewModels: [ClickmeliveiOSSDK.ProductViewModel])
 }
-extension ClickmeliveiOSSDK.FeedViewController : PIPKit.PIPUsable {
-  @_Concurrency.MainActor(unsafe) final public var initialState: PIPKit.PIPState {
+extension ClickmeliveiOSSDK.FeedViewController : PIPUsable {
+  @_Concurrency.MainActor(unsafe) final public var initialState: PIPState {
     get
   }
-  @_Concurrency.MainActor(unsafe) final public var initialPosition: PIPKit.PIPPosition {
+  @_Concurrency.MainActor(unsafe) final public var initialPosition: PIPPosition {
     get
   }
   @_Concurrency.MainActor(unsafe) final public var pipSize: CoreFoundation.CGSize {
     get
   }
-  @_Concurrency.MainActor(unsafe) final public var pipCorner: PIPKit.PIPCorner? {
+  @_Concurrency.MainActor(unsafe) final public var pipCorner: PIPCorner? {
     get
   }
   @_Concurrency.MainActor(unsafe) final public func onMinimizeTapped()
