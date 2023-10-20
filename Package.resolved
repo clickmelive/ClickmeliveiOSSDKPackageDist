@@ -1,32 +1,34 @@
 {
-  "pins" : [
-    {
-      "identity" : "alamofire",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Alamofire/Alamofire.git",
-      "state" : {
-        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
-        "version" : "5.7.1"
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "bc268c28fb170f494de9e9927c371b8342979ece",
+          "version": "5.7.1"
+        }
+      },
+      {
+        "package": "Lottie",
+        "repositoryURL": "https://github.com/airbnb/lottie-spm.git",
+        "state": {
+          "branch": null,
+          "revision": "60ea4f82fba8b4cb21a75665a889e86ed4d81c6e",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
+        "state": {
+          "branch": null,
+          "revision": "ac6c0fc9da221873e01bd1a0d4818498a71eef33",
+          "version": "4.0.6"
+        }
       }
-    },
-    {
-      "identity" : "lottie-spm",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/airbnb/lottie-spm.git",
-      "state" : {
-        "revision" : "60ea4f82fba8b4cb21a75665a889e86ed4d81c6e",
-        "version" : "4.2.0"
-      }
-    },
-    {
-      "identity" : "starscream",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/daltoniam/Starscream.git",
-      "state" : {
-        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
-        "version" : "4.0.4"
-      }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }

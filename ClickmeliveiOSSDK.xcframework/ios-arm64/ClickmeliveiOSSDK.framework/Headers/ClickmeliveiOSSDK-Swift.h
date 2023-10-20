@@ -267,6 +267,13 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK13AttributeCell")
 
 
 
+SWIFT_CLASS("_TtC17ClickmeliveiOSSDK7BanView")
+@interface BanView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC17ClickmeliveiOSSDK15BottomSheetView")
 @interface BottomSheetView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -562,6 +569,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK8FeedCell")
 
 
 
+
 SWIFT_CLASS("_TtC17ClickmeliveiOSSDK18FeedCellController")
 @interface FeedCellController : NSObject <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -570,6 +578,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK18FeedCellController")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -596,6 +605,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK18FeedViewController")
 - (void)loadView;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
 
 
 
