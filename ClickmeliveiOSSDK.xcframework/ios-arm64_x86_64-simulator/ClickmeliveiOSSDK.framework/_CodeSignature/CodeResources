@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		RhdXn9FPvDRQiFoCGEQy4IASuEw=
+		juOJwUGkJgTuT3LBYESkxXVegUI=
 		</data>
 		<key>Headers/ClickmeliveiOSSDK-Swift.h</key>
 		<data>
-		xt4RW1T/goNgjkg3Fo7nJlTHuT8=
+		5e1upeWCeJwsZk/RnJr6nKyZmCU=
 		</data>
 		<key>Headers/ClickmeliveiOSSDK.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5lJwOi9gMDJPQqx3QTUEC+thqeM=
+		/OPeUAYdk6WvWAelJ26d/0UXDoY=
 		</data>
 		<key>Interests.strings</key>
 		<data>
@@ -102,47 +102,47 @@
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		FbNLFAx6uv3aTGVB/ICnGpULag8=
+		Xwm3aq47Np7VsiUEqJNkTQELaKo=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		w8zg6JOGtMMLxNq8At3PkzIOaDU=
+		dxp+svxpxXztMFVcuxHqoI6NTTU=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		PaoIHcgxHEJrVDnXpTYBFTuAP8c=
+		mUaPMpqld3lga8ZIHmh7OPUbPic=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		w8zg6JOGtMMLxNq8At3PkzIOaDU=
+		dxp+svxpxXztMFVcuxHqoI6NTTU=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m0T20PHFS4dkTNiRZaUGiQOZ8/0=
+		JZ2uG6evH9i68ZweDImQezpuaA4=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		FbNLFAx6uv3aTGVB/ICnGpULag8=
+		Xwm3aq47Np7VsiUEqJNkTQELaKo=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		alomYZSvMxwTxYQvjmhfImusF88=
+		Y49sc1Kjsxriveq/vYlePLKz5mo=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		f0lYZNhcmFic9jrjl9Ysb61OtXM=
+		WnxF2zgjEWKHx1E8Tutg7Yxo76s=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		alomYZSvMxwTxYQvjmhfImusF88=
+		Y49sc1Kjsxriveq/vYlePLKz5mo=
 		</data>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ob9jDaoBePclrkatOSVGnV3lXCI=
+		1ycMZyOUmhjAk/O4WHCu2QSmLP0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		xR2ut9lQ7Z1qRhW2p3V9+IzMvAQ=
+		HjrnWDGJSWdE3nuRCdLDPedpl0o=
 		</data>
 		<key>Montserrat-Bold.ttf</key>
 		<data>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oBiM656kNO1DCCS72jcU/ZFLdt4=
+			gjbYiWbXoJe6ckdC02J2pRwAaMM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -262,7 +262,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oBiM656kNO1DCCS72jcU/ZFLdt4=
+			gjbYiWbXoJe6ckdC02J2pRwAaMM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -316,7 +316,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KRLZ6vNkeqVEy40+0VHdgSZuWuE=
+			GUtcPr/gSYQq7fkkZF8tH/ZAmLw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -355,14 +355,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U2RMoj1N8Hdc2+ZCfouwIDrihoY9x9Z+Qbk1rC26atQ=
+			GBQxQVmDPoDhyfcxZk8wAfYBap9emTymCy1ej9cuuEU=
 			</data>
 		</dict>
 		<key>Headers/ClickmeliveiOSSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kXPaepmrIaSiB7Zm6f8HkeMm96C22MvlMZ+BVm2PeVw=
+			QgKPGf6YCTTcwsWa2Mlr9fXK3+t7VFavBTzTIsVnMSA=
 			</data>
 		</dict>
 		<key>Headers/ClickmeliveiOSSDK.h</key>
@@ -516,77 +516,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			25NORvf92hspAjFDCe0+jCQ5Mc6DUCgO4E997Tc2Jf8=
+			fP9LPGyUPsYTxLA1F3ecBQT0poYN09ABbWsZA+WVeaE=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tVBjFjRS6bdii+WjlSOGYrumiQ8ZWpW4dwqz+JSr4zA=
+			IpwUM6PI3vTlRdYwLipe02pSICF6mKqsRvnftRSrAe4=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vIcipyobtRbdOv2/S9QBL3YU46L7nVU3JI3ZqFEoMuM=
+			OvNPQ77NXNZAK36zKQN7skHAwtMgwT9CGJEXSMFNuHo=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tVBjFjRS6bdii+WjlSOGYrumiQ8ZWpW4dwqz+JSr4zA=
+			IpwUM6PI3vTlRdYwLipe02pSICF6mKqsRvnftRSrAe4=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3EwA3N/lOtfZJiwWEZ+t1zas9fthut/tAtwvnZWsJ4A=
+			2qG0qJNsn502hOnTt8+TlzocrcvACxNb6z87r2518uY=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			25NORvf92hspAjFDCe0+jCQ5Mc6DUCgO4E997Tc2Jf8=
+			fP9LPGyUPsYTxLA1F3ecBQT0poYN09ABbWsZA+WVeaE=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7DF/sgd8aFWSuMCyQiqk/WKA8W/3cz4PgroDYwJxbaE=
+			ifuCHXc13pzvQAPGmqj4Ex+ZkO5UJXnpZ2f85v/Ci0g=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JyF7mbQk8sKbj25dGZgw6S221jxXEifDXA9N3zFDztE=
+			gDLhsrjKhYf5UBH/KM82zVrERyynRVTGV2CrHYt7rM0=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7DF/sgd8aFWSuMCyQiqk/WKA8W/3cz4PgroDYwJxbaE=
+			ifuCHXc13pzvQAPGmqj4Ex+ZkO5UJXnpZ2f85v/Ci0g=
 			</data>
 		</dict>
 		<key>Modules/ClickmeliveiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uk+IEOlcr/dymXpF3ucrviitALw84VmkdMfNHYSxv9k=
+			ugC043G9vK7UPN6XDjpx3JQ401VsKVY83tgGKguyjuE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+UPPVX6NeQ0biSa99zfgT2pVyl8GAR3U2+4ezBPEJS8=
+			kZNGNCpg1gJhQn05NueHgiUaQucuXTSrIBAf8mZH1WM=
 			</data>
 		</dict>
 		<key>Montserrat-Bold.ttf</key>
@@ -635,7 +635,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8+vTuybc6S7LEaUCqIv/BGGjsvg+r2wnzwDZGifBkPw=
+			I7dgFPax3ztsVLR5leKwChl+dh3pY9yfzNtniprqJ94=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -725,7 +725,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8+vTuybc6S7LEaUCqIv/BGGjsvg+r2wnzwDZGifBkPw=
+			I7dgFPax3ztsVLR5leKwChl+dh3pY9yfzNtniprqJ94=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -779,7 +779,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x+PMEs+gkfC4MlgljOHIF1daWGCLvoVF+97eqsYmNoY=
+			YnHawrHtztT5LU12Lk3NzxSqUO9TM5V0IKW/r9Vokjw=
 			</data>
 			<key>optional</key>
 			<true/>
