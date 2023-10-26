@@ -2094,6 +2094,13 @@ extension ClickmeliveiOSSDK.TableCellController : Swift.Hashable {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class StreamInfoViewController : ClickmeliveiOSSDK.BottomSheetViewController {
+  @_Concurrency.MainActor(unsafe) public static let STREAM_INFO_SHOWN_KEY: Swift.String
+  @_Concurrency.MainActor(unsafe) override public init(bottomSheetHeight: ClickmeliveiOSSDK.BottomSheetHeight)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc deinit
+}
 final public class EventProductsViewModel {
   public init(eventProductLoader: ClickmeliveiOSSDK.EventProductLoader)
   final public func getLocalizedTotal(_ total: Swift.Int) -> Swift.String

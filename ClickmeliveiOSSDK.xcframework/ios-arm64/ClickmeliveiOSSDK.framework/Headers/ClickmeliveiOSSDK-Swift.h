@@ -928,6 +928,14 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK9StockView")
 
 
 
+SWIFT_CLASS("_TtC17ClickmeliveiOSSDK24StreamInfoViewController")
+@interface StreamInfoViewController : BottomSheetViewController
+- (void)viewDidLoad;
+- (void)viewDidDisappear:(BOOL)animated;
+@end
+
+
+
 
 
 

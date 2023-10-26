@@ -60212,6 +60212,262 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClickmeliveiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StreamInfoViewController",
+        "printedName": "StreamInfoViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "STREAM_INFO_SHOWN_KEY",
+            "printedName": "STREAM_INFO_SHOWN_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ClickmeliveiOSSDK24StreamInfoViewControllerC21STREAM_INFO_SHOWN_KEYSSvpZ",
+            "mangledName": "$s17ClickmeliveiOSSDK24StreamInfoViewControllerC21STREAM_INFO_SHOWN_KEYSSvpZ",
+            "moduleName": "ClickmeliveiOSSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ClickmeliveiOSSDK24StreamInfoViewControllerC21STREAM_INFO_SHOWN_KEYSSvgZ",
+                "mangledName": "$s17ClickmeliveiOSSDK24StreamInfoViewControllerC21STREAM_INFO_SHOWN_KEYSSvgZ",
+                "moduleName": "ClickmeliveiOSSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bottomSheetHeight:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StreamInfoViewController",
+                "printedName": "ClickmeliveiOSSDK.StreamInfoViewController",
+                "usr": "c:@M@ClickmeliveiOSSDK@objc(cs)StreamInfoViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BottomSheetHeight",
+                "printedName": "ClickmeliveiOSSDK.BottomSheetHeight",
+                "usr": "s:17ClickmeliveiOSSDK17BottomSheetHeightO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17ClickmeliveiOSSDK24StreamInfoViewControllerC17bottomSheetHeightAcA06BottomhI0O_tcfc",
+            "mangledName": "$s17ClickmeliveiOSSDK24StreamInfoViewControllerC17bottomSheetHeightAcA06BottomhI0O_tcfc",
+            "moduleName": "ClickmeliveiOSSDK",
+            "overriding": true,
+            "declAttributes": [
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ClickmeliveiOSSDK@objc(cs)StreamInfoViewController(im)viewDidLoad",
+            "mangledName": "$s17ClickmeliveiOSSDK24StreamInfoViewControllerC11viewDidLoadyyF",
+            "moduleName": "ClickmeliveiOSSDK",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidDisappear",
+            "printedName": "viewDidDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ClickmeliveiOSSDK@objc(cs)StreamInfoViewController(im)viewDidDisappear:",
+            "mangledName": "$s17ClickmeliveiOSSDK24StreamInfoViewControllerC16viewDidDisappearyySbF",
+            "moduleName": "ClickmeliveiOSSDK",
+            "overriding": true,
+            "objc_name": "viewDidDisappear:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ClickmeliveiOSSDK@objc(cs)StreamInfoViewController",
+        "mangledName": "$s17ClickmeliveiOSSDK24StreamInfoViewControllerC",
+        "moduleName": "ClickmeliveiOSSDK",
+        "declAttributes": [
+          "Custom",
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@ClickmeliveiOSSDK@objc(cs)BottomSheetViewController",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ClickmeliveiOSSDK.BottomSheetViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Layouting",
+            "printedName": "Layouting",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ViewType",
+                "printedName": "ViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BottomSheetView",
+                    "printedName": "ClickmeliveiOSSDK.BottomSheetView",
+                    "usr": "c:@M@ClickmeliveiOSSDK@objc(cs)BottomSheetView"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:17ClickmeliveiOSSDK9LayoutingP",
+            "mangledName": "$s17ClickmeliveiOSSDK9LayoutingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -69463,69 +69719,34 @@
       "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
       "kind": "StringLiteral",
       "offset": 210,
-      "length": 119,
-      "value": "\"Bu yayına yorum yapmanız engellenmiştir. Sorularınızla ilgili Pazarama Çağrı Merkezi ile görüşebilirsiniz.\""
-    },
-    {
-      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
-      "kind": "StringLiteral",
-      "offset": 363,
-      "length": 27,
-      "value": "\"Pazarama Çağrı Merkezi\""
-    },
-    {
-      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 449,
-      "length": 4,
-      "value": "0.54"
-    },
-    {
-      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
-      "kind": "FloatLiteral",
-      "offset": 462,
-      "length": 4,
-      "value": "0.22"
-    },
-    {
-      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 474,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 484,
-      "length": 1,
-      "value": "1"
+      "length": 168,
+      "value": "\"Bu yayına yorum yapmanız engellenmiştir. Sorunlarınız ile ilgili (0850) 724 7976 numaralı telefondan Pazarama Müşteri Hizmetleri ile irtibata geçebilirsiniz.\""
     },
     {
       "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
       "kind": "BooleanLiteral",
-      "offset": 866,
+      "offset": 758,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
       "kind": "IntegerLiteral",
-      "offset": 905,
+      "offset": 797,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1105,
+      "offset": 997,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Views\/View\/BanView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1172,
+      "offset": 1064,
       "length": 1,
       "value": "0"
     },
@@ -77781,6 +78002,104 @@
       "offset": 1776,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 23,
+      "value": "\"STREAM_INFO_SHOWN_KEY\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
+      "length": 24,
+      "value": "\"img_handle_area_drawer\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 425,
+      "length": 11,
+      "value": "\"icon_info\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 484,
+      "length": 306,
+      "value": "\"Canlı yayına katıldığınızda, profilinizdeki ad bilginizin tamamı görüntülenecek olup, soyadı bilginiz ise kısıtlı olarak gösterilecektir. Katılım ve chat bilgileri tüm izleyiciler tarafından görüntülenebilmektedir. Canlı yayınlar hizmet sağlayıcı tarafından kaydedilmektedir.\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1405,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1480,
+      "length": 15,
+      "value": "\"Bilgilendirme\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1574,
+      "length": 26,
+      "value": "\"StreamInfoView.InfoTitle\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1763,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1937,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1979,
+      "length": 32,
+      "value": "\"StreamInfoView.InfoDescription\""
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2173,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2258,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2288,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCoreiOS\/Features\/Feed UI\/Controllers\/StreamInfoViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2357,
+      "length": 7,
+      "value": "\"Tamam\""
     },
     {
       "filePath": "\/Users\/sevgican\/harpeon\/GitHub\/ClickmeliveiOSSDK\/ClickmeliveiOSSDK\/ClickmeliveCore\/Feature\/Event Products\/Event Products Presentation\/EventProductsViewModel.swift",

@@ -928,6 +928,14 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK9StockView")
 
 
 
+SWIFT_CLASS("_TtC17ClickmeliveiOSSDK24StreamInfoViewController")
+@interface StreamInfoViewController : BottomSheetViewController
+- (void)viewDidLoad;
+- (void)viewDidDisappear:(BOOL)animated;
+@end
+
+
+
 
 
 
@@ -1890,6 +1898,14 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK9StockView")
 @interface StockView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+@end
+
+
+
+SWIFT_CLASS("_TtC17ClickmeliveiOSSDK24StreamInfoViewController")
+@interface StreamInfoViewController : BottomSheetViewController
+- (void)viewDidLoad;
+- (void)viewDidDisappear:(BOOL)animated;
 @end
 
 
