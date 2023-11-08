@@ -406,6 +406,31 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK22DiscoverCellController")
 
 
 
+
+SWIFT_CLASS("_TtC17ClickmeliveiOSSDK23DiscoverEndedBannerView")
+@interface DiscoverEndedBannerView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC17ClickmeliveiOSSDK27DiscoverEventProcessingView")
+@interface DiscoverEventProcessingView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC17ClickmeliveiOSSDK25DiscoverRefreshController")
+@interface DiscoverRefreshController : NSObject
+- (void)refresh;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC17ClickmeliveiOSSDK21DiscoverTapToJoinView")
 @interface DiscoverTapToJoinView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -432,6 +457,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK22DiscoverViewController")
 - (void)loadView;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
 
 
 
@@ -670,6 +696,7 @@ SWIFT_CLASS("_TtC17ClickmeliveiOSSDK22HomePageViewController")
 @interface HomePageViewController : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
+- (void)viewDidDisappear:(BOOL)animated;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)loadView;
