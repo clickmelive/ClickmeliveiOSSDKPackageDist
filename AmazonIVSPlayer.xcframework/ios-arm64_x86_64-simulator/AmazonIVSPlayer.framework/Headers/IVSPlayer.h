@@ -34,6 +34,17 @@ typedef NS_ENUM(NSInteger, IVSLogLevel) {
     IVSLogLevelError,
 } NS_SWIFT_NAME(IVSPlayer.LogLevel);
 
+/// Possible recovery modes for `-[IVSPlayer setNetworkRecoveryMode:]`
+typedef NS_ENUM(NSInteger, IVSPlayerNetworkRecoveryMode) {
+    /// Do nothing after recovering from a network interruption.
+    IVSPlayerNetworkRecoveryModeNone,
+    /// Resumes the previous player state after recovering from a network interruption.
+    /// For example, if the player was playing before the network was interrupted, then it will
+    /// resume playback after network recovery. Similarly, if the player was paused, then it remains
+    /// paused.
+    IVSPlayerNetworkRecoveryModeResume,
+} NS_SWIFT_NAME(IVSPlayer.NetworkRecoveryMode);
+
 @class IVSQuality;
 @protocol IVSPlayerDelegate;
 
@@ -64,6 +75,9 @@ IVS_EXPORT
 
 /// Volume of the audio track, if any. Supported range: 0.0 to 1.0. Default: 1.0 (max).
 @property (nonatomic) float volume;
+
+/// Average source media bitrate of the stream in bits per second (bps).
+@property (nonatomic, readonly) NSInteger averageBitrate;
 
 /// Current approximate bandwidth estimate in bits per second (bps).
 @property (nonatomic, readonly) NSInteger bandwidthEstimate;
@@ -173,9 +187,13 @@ IVS_EXPORT
 /// @see `liveLowLatency` property, which is `true` when this mode is enabled for the stream.
 - (void)setLiveLowLatencyEnabled:(BOOL)enable;
 
+/// Set the initial starting bitrate when using auto quality mode. This determines the initial quality for an adaptive stream, when no bandwidth estimate value has been determined. Applied on the next call to the `-[IVSPlayer load:]` method.
+/// @param bitrate Initial bitrate to use.
+- (void)setAutoInitialBitrate:(NSInteger)bitrate;
+
 /// Set the maximum bitrate when using auto quality mode. This can be used to control resource usage. The bitrate you provide here is applied to the current stream as well as future streams loaded by the player.
-/// @param autoMaxBitrate Maximum bitrate to use.
-- (void)setAutoMaxBitrate:(NSInteger)autoMaxBitrate;
+/// @param bitrate Maximum bitrate to use.
+- (void)setAutoMaxBitrate:(NSInteger)bitrate;
 
 /// Sets the maximum quality the player is allowed to auto-switch up to (if ABR is enabled) using the input quality's bitrate value. This allows you to control resource usage.
 /// The `IVSQuality` you provide here is applied to the current stream. If you load a new stream, call this again after `IVSPlayerStateReady`.
@@ -213,6 +231,11 @@ IVS_EXPORT
 /// Sets the HTTP 'Origin' header on all outgoing requests.
 /// @param origin The HTTP 'Origin' header value.
 - (void)setOrigin:(nullable NSURL *)origin;
+
+/// Sets the network recovery mode for handling network interruptions. Applied on the next call to
+/// the `-[IVSPlayer load:]` method.
+/// @param networkRecoveryMode The network recovery mode.
+- (void)setNetworkRecoveryMode:(IVSPlayerNetworkRecoveryMode)networkRecoveryMode;
 
 @end
 

@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/IVSPlayer.h</key>
 		<data>
-		tAhyfuPALF6VAyrjAEaLz+0GWE8=
+		jwHq9UxYnI0+ylTWJ2cJsx94K4M=
 		</data>
 		<key>Headers/IVSPlayerDelegate.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/IVSPlayerLayer.h</key>
 		<data>
-		mgP6ZAtXH8xrPsnZW1dflCaxQww=
+		8Z/eCZI3YjC1u8N2y8r6dPwvXS0=
 		</data>
 		<key>Headers/IVSPlayerView.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		L6DGtLNuCwQzhNk064ujP4wzf7w=
+		N6eLFshYBPxfI25leVZVEo21T+4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z4YWm5f5UAgOowW5h9rpEhRRc4aKsVbrqcb/hUv+MXI=
+			m98JjalTwP9bV6KYXnN9eU+8akSyvlJipDNWoynPuFQ=
 			</data>
 		</dict>
 		<key>Headers/IVSPlayerDelegate.h</key>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UwJHZDHnq6oAGNiNWR9mVl3iWhd0HkPzqCPCQxeYXhs=
+			ZSIQyCjIbf7LEQZq5bSm+ebFO/Jjo7uHrquZiyft29Y=
 			</data>
 		</dict>
 		<key>Headers/IVSPlayerView.h</key>

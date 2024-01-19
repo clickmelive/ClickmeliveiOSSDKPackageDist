@@ -36,6 +36,13 @@ IVS_EXPORT
 /// This property is key-value observable.
 @property (nonatomic, readonly) CGRect videoRect;
 
+/// Returns the pixel buffer of the most recently displayed frame. Can be used even
+/// when the player is in the playing state, unlike the `AVPlayerLayer` method
+/// of the same name.
+/// When a new source is loaded, the frames held by this API will be discarded.
+/// Therefore, only frames from the currently loaded source can be returned by this API.
+- (nullable CVPixelBufferRef)copyDisplayedPixelBuffer API_AVAILABLE(ios(13.0)) NS_SWIFT_NAME(displayedPixelBuffer());
+
 @end
 
 NS_ASSUME_NONNULL_END
